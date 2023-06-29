@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+body {
+  display: flex;
+  justify-content: center;
+  background-color: #212121;
+}
+
+h1, h2, h3, h4, ul, li {
+  color: whitesmoke;
+}
+
+p {
+  color: black;
+}
+
+h1 {
+  font-weight: bold;
+  color: rgb(100,119,178);
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; 
+}
+  
