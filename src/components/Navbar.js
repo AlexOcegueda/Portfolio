@@ -8,7 +8,7 @@ const Navbar = () => {
         <>
             <Nav>
                 <Name>Alex Ocegueda Castro</Name>
-                <NavLinks>
+                <NavLinks className='nav-links'>
                     <Link>About</Link>
                     <Link>Projects</Link>
                     <Link>Resume</Link>
@@ -26,9 +26,11 @@ export default Navbar;
 const Nav = styled.nav`
     display: flex;
     justify-content: space-between;
+    margin: 30px;
 `;
 
 const Name = styled.p`
+    color: rgb(100,119,178);
     font-size: 20px;
     font-weight: bold;
 `;
@@ -41,4 +43,5 @@ const NavLinks = styled.ul`
 const Link = styled.li` 
     margin-right: 10px;
     list-style: none;
+    cursor: pointer;
 `;
