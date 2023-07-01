@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import Navbar from '../components/Navbar';
 import { Helmet } from 'react-helmet';
 
+const metaDescription = "My name is Alex Ocegueda Castro and I am a recent college graduate with 7 months experience";
+
 /* NOTES
 Added 1 rem to left margin to deal with smaller devices
 */
@@ -11,6 +13,7 @@ const About = () => {
         <>
             <Helmet>
                 <title>About Page</title>
+                <meta name="description" content={metaDescription} />
             </Helmet>
             <Navbar />
             <AboutContainer>

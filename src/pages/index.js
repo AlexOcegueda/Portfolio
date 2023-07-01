@@ -12,6 +12,8 @@ import pyScriptImg from "../images/pythonscripts.webp";
 
 const IndexPage = () => {
 
+  const metaDescription = "Welcome to my Portfolio. Check out some of my projects!";
+
   const cpuDescription = (
       <p>
         Uses a 3 layered priority queue algorithm to simulate how a CPU schudules
@@ -42,6 +44,7 @@ const IndexPage = () => {
     <>
       <Helmet>
         <title>Home Page</title>
+        <meta name="description" content={metaDescription} />
       </Helmet>
       <Navbar />
       <h1 id="project-header">Projects</h1>
