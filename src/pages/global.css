@@ -51,3 +51,8 @@ h1, h2, a, ul, li, p {
     margin-left: 1rem;
   }
 }
+
+img {
+  width: 100%; /* Adjust as needed */
+  height: auto;
+}
