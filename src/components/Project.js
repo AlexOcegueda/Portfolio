@@ -6,8 +6,9 @@ const Project = ({ displayName, tools, link, description, imageSrc }) => {
         <Container>
             <Text>
                 <h2>{displayName}</h2>
-                <Tools>{tools.join(', ')}, <Link href={link}>Github</Link></Tools>
+                <Tools id='tool'>{tools.join(', ')}</Tools>
                 <Description>{description}</Description>
+                <Link href={link}>See on Github →</Link>
             </Text>
             <Image src={imageSrc} alt="Project Image" />
         </Container>
@@ -47,4 +48,5 @@ const Link = styled.a`
 
 const Description = styled.p`
     color: black;
+    margin-right: .5rem;
 `;
