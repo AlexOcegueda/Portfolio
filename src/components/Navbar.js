@@ -9,6 +9,7 @@ const Navbar = () => {
             <NavLinks className='nav-links'>
                 <NavLink to="/about">About</NavLink>
                 <NavLink to="/">Projects</NavLink>
+                <NavLink to="/Alex_Ocegueda_Castro_Resume.pdf" target="_blank">Resume</NavLink>
             </NavLinks>
         </Nav>
     );
