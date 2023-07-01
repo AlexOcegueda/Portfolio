@@ -22,3 +22,7 @@ h1 {
 h1, h2, a, ul, li, p {
   color: whitesmoke;
 }
+
+#tool {
+  color: rgb(100,119,178);
+}
