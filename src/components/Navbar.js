@@ -27,7 +27,7 @@ const Nav = styled.nav`
 `;
 
 const Name = styled.p`
-    color: rgb(100, 119, 178);
+    color: #F1BF98;
     font-size: 20px;
     font-weight: bold;
 `;
@@ -39,11 +39,12 @@ const NavLinks = styled.ul`
 
 const NavLink = styled(Link)`
     margin-right: 1rem;
+    font-weight: 600;
     list-style: none;
     cursor: pointer;
     text-decoration: none;
-
+    color: #717568;
     &:hover {
-        color: #555;
+        color: white;
     }
 `;
