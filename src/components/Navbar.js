@@ -1,23 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'gatsby';
 
 const Navbar = () => {
     return (
-    <div>
-        {
-        <>
-            <Nav>
-                <Name>Alex Ocegueda Castro</Name>
-                <NavLinks className='nav-links'>
-                    <Link>About</Link>
-                    <Link>Projects</Link>
-                    <Link>Resume</Link>
-                    <Link>Contact</Link>
-                </NavLinks>
-            </Nav>
-        </>
-        }
-    </div>
+        <Nav>
+            <Name>Alex Ocegueda Castro</Name>
+            <NavLinks className='nav-links'>
+                <NavLink to="/about">About</NavLink>
+                <NavLink to="/">Projects</NavLink>
+            </NavLinks>
+        </Nav>
     );
 };
 
@@ -26,11 +19,11 @@ export default Navbar;
 const Nav = styled.nav`
     display: flex;
     justify-content: space-between;
-    margin: 30px;
+    padding: 1.5rem 0 1.5rem 0;
 `;
 
 const Name = styled.p`
-    color: rgb(100,119,178);
+    color: rgb(100, 119, 178);
     font-size: 20px;
     font-weight: bold;
 `;
@@ -40,8 +33,13 @@ const NavLinks = styled.ul`
     align-items: center;
 `;
 
-const Link = styled.li` 
-    margin-right: 10px;
+const NavLink = styled(Link)`
+    margin-right: 1rem;
     list-style: none;
     cursor: pointer;
+    text-decoration: none;
+
+    &:hover {
+        color: #555;
+    }
 `;
