@@ -26,6 +26,15 @@ const Image = styled.img`
     border-radius: 1rem;
     object-fit: cover;
     width: 20rem;
+
+    @media screen and (max-width: 768px) { /* Medium screens */
+        width: 15rem;
+    }
+
+    @media screen and (max-width: 576px) { /* Small screens */
+        width: 100%;
+        max-width: 20rem;
+    }
 `;
 
 const Container = styled.div`
@@ -34,9 +43,20 @@ const Container = styled.div`
     height: 15rem;
     margin-top: 2rem;
     padding: 1rem;
+
+    @media screen and (max-width: 768px) { /* Medium screens */
+        width: 30rem;
+        height: 13rem;
+    }
+
+    @media screen and (max-width: 576px) { /* Small screens */
+        width: 100%;
+        flex-direction: column;
+        height: auto;
+    }
 `;
 
-const Tools = styled.p`
+const Tools = styled.span`
     display: flex;
     font-weight: semi-bold;
 `;

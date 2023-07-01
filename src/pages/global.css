@@ -26,3 +26,28 @@ h1, h2, a, ul, li, p {
 #tool {
   color: rgb(100,119,178);
 }
+
+.hidden {
+  opacity: 0;
+  transition: all 1s;
+  transform: translateX(-100%);
+  filter: blur(5px);
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+@media(prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
+}
+
+@media screen and (max-width: 576px) { /*  Med Length */
+  #project-header {
+    margin-left: 1rem;
+  }
+}

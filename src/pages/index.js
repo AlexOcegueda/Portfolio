@@ -40,9 +40,14 @@ const IndexPage = () => {
   return (
     <>
       <Navbar />
-      <h1>Projects</h1>
+      <h1 id="project-header">Projects</h1>
       <Projects>
         <Project
+        data-sal="slide-up"
+        data-sal-duration="2000" // changes duration of the animation (from 200 to 2000 ms)
+      data-sal-delay="300" // adds delay to the animation (from 5 to 1000 ms)
+      data-sal-easing="ease" // sets easing for the animation (see easings.net for reference)
+    
           displayName="PokeAPI Pokedex"
           tools={['React', 'JavaScript']}
           link="https://github.com/AlexOcegueda/pokeapi_pokedex"
@@ -50,6 +55,11 @@ const IndexPage = () => {
           imageSrc={pokeImg}
         />
         <Project
+        data-sal="slide-up"
+        data-sal-duration="2000" // changes duration of the animation (from 200 to 2000 ms)
+      data-sal-delay="300" // adds delay to the animation (from 5 to 1000 ms)
+      data-sal-easing="ease" // sets easing for the animation (see easings.net for reference)
+    
           displayName="CPU Task Simulator"
           tools={['Java']}
           link="https://github.com/AlexOcegueda/MultiLevelQueues"
@@ -57,13 +67,22 @@ const IndexPage = () => {
           imageSrc={cpuImg}
         />
         <Project
+        data-sal="slide-up"
+        data-sal-duration="2000" // changes duration of the animation (from 200 to 2000 ms)
+      data-sal-delay="300" // adds delay to the animation (from 5 to 1000 ms)
+      data-sal-easing="ease" // sets easing for the animation (see easings.net for reference)
+    
           displayName="Python Scripts"
           tools={['Python', 'Turtle', 'PyQt5']}
           link="https://github.com/AlexOcegueda/Python_Scripts/"
           description={pyScriptDescription}
           imageSrc={pyScriptImg}
         />
-        <Project
+        <Project data-sal="slide-up"
+        data-sal-duration="2000" // changes duration of the animation (from 200 to 2000 ms)
+      data-sal-delay="300" // adds delay to the animation (from 5 to 1000 ms)
+      data-sal-easing="ease" // sets easing for the animation (see easings.net for reference)
+    
           displayName="Student Database"
           tools={['Java, SpringBoot, MySQL']}
           link="https://github.com/AlexOcegueda/MultiLevelQueues"
