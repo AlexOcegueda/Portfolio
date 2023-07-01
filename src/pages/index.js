@@ -4,10 +4,10 @@ import Navbar from "../components/Navbar";
 import Project from "../components/Project"
 import styled from "styled-components";
 
-import cpuImg from "../images/cpu.jpg"
-import databaseImg from "../images/database.jpg";
-import pokeImg from "../images/pokemon.jpg";
-import pyScriptImg from "../images/pythonscripts.jpg";
+import cpuImg from "../images/cpu.webp"
+import databaseImg from "../images/database.webp";
+import pokeImg from "../images/pokemon.webp";
+import pyScriptImg from "../images/pythonscripts.webp";
 
 const IndexPage = () => {
 
