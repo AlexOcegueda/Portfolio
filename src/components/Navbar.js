@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
 
-import ResumePDF from '../../public/static/Alex_Ocegueda_Castro_Resume.pdf';
+import ResumePDF from '../../public/static/resume.pdf';
 
 const Navbar = () => {
     const handleResumeClick = () => {
