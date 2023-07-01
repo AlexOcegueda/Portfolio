@@ -15,7 +15,7 @@ const Navbar = () => {
             <NavLinks className='nav-links'>
                 <NavLink to="/about">About</NavLink>
                 <NavLink to="/">Projects</NavLink>
-                <ResumeButton onClick={handleResumeClick}>Resume</ResumeButton>
+                {/*<ResumeButton onClick={handleResumeClick}>Resume</ResumeButton>*/}
             </NavLinks>
         </Nav>
     );
