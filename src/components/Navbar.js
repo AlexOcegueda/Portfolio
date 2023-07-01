@@ -2,14 +2,20 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
 
+import ResumePDF from '../../public/static/Alex_Ocegueda_Castro_Resume.pdf';
+
 const Navbar = () => {
+    const handleResumeClick = () => {
+        window.open(ResumePDF, '_blank');
+    };
+
     return (
         <Nav>
             <Name>Alex Ocegueda Castro</Name>
             <NavLinks className='nav-links'>
                 <NavLink to="/about">About</NavLink>
                 <NavLink to="/">Projects</NavLink>
-                <NavLink to="/Alex_Ocegueda_Castro_Resume.pdf" target="_blank">Resume</NavLink>
+                <ResumeButton onClick={handleResumeClick}>Resume</ResumeButton>
             </NavLinks>
         </Nav>
     );
@@ -47,5 +53,25 @@ const NavLink = styled(Link)`
     color: #717568;
     &:hover {
         color: white;
+    }
+`;
+
+const ResumeButton = styled.button`
+    margin-right: 1rem;
+    font-weight: 400;
+    font-size: 14px;
+    list-style: none;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    background-color: #F1BF98;
+    border: 1px solid black;
+    border-radius: 1rem;
+    padding: .5rem 1rem .5rem 1rem;
+    vertical-align: middle; /* Align the button vertically */
+    &:hover {
+        color: white;
+        background-color: #FFCAA1;
+        border: 1px solid #FFCAA1;
     }
 `;
