@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Navbar from '../components/Navbar';
+import { Helmet } from 'react-helmet';
 
 /* NOTES
 Added 1 rem to left margin to deal with smaller devices
@@ -8,6 +9,9 @@ Added 1 rem to left margin to deal with smaller devices
 const About = () => {
     return (
         <>
+            <Helmet>
+                <title>About Page</title>
+            </Helmet>
             <Navbar />
             <AboutContainer>
                 <h1>About Me</h1>

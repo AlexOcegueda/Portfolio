@@ -3,6 +3,7 @@ import './global.css';
 import Navbar from "../components/Navbar";
 import Project from "../components/Project"
 import styled from "styled-components";
+import { Helmet } from 'react-helmet';
 
 import cpuImg from "../images/cpu.webp"
 import databaseImg from "../images/database.webp";
@@ -39,6 +40,9 @@ const IndexPage = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Home Page</title>
+      </Helmet>
       <Navbar />
       <h1 id="project-header">Projects</h1>
       <Projects>
