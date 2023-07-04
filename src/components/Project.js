@@ -67,6 +67,6 @@ const Link = styled.a`
 `;
 
 const Description = styled.p`
-    color: black;
+    color: white;
     margin-right: .5rem;
 `;
