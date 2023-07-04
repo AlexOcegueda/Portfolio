@@ -1,0 +1,32 @@
+[
+  {
+    "displayName": "Dog Match Maker",
+    "tools": ["Gatsby", "React", "CEO DogAPI"],
+    "link": "https://github.com/AlexOcegueda/NHS_match_maker",
+    "description": "Built prototype filter and match making system for a local animal shelter."
+  },
+  {
+    "displayName": "PokeAPI Pokedex",
+    "tools": ["React", "JavaScript"],
+    "link": "https://github.com/AlexOcegueda/pokeapi_pokedex",
+    "description": "Built mobile friendly website to display original 151 pokemon."
+  },
+  {
+    "displayName": "CPU Task Simulator",
+    "tools": ["Java"],
+    "link": "https://github.com/AlexOcegueda/MultiLevelQueues",
+    "description": "Uses a 3 layered priority queue algorithm to simulate how a CPU schedules incoming tasks. Utilizes Round Robin and First Come First Serve algorithms as well."
+  },
+  {
+    "displayName": "Python Scripts",
+    "tools": ["Python", "Turtle", "PyQt5"],
+    "link": "https://github.com/AlexOcegueda/Python_Scripts/",
+    "description": "Collection of Python scripts I've done in and outside of college."
+  },
+  {
+    "displayName": "Student Database",
+    "tools": ["Java, SpringBoot, MySQL"],
+    "link": "https://github.com/AlexOcegueda/MultiLevelQueues",
+    "description": "This is a SpringBoot project of a student database. It is connected with an external SQL database and performs basic CRUD commands."
+  }
+]
