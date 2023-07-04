@@ -25,7 +25,8 @@ const Text = styled.div`
 const Image = styled.img`
     border-radius: 1rem;
     object-fit: cover;
-    width: 20rem;
+    max-width: 100%;
+    height: auto;
 
     @media screen and (max-width: 768px) { /* Medium screens */
         width: 15rem;
