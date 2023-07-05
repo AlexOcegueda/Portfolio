@@ -20,6 +20,7 @@ export default Project;
 const Text = styled.div`
     display: flex;
     flex-direction: column;
+    width: 100%;
 `;
 
 const Image = styled.img`
