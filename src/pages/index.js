@@ -34,20 +34,46 @@ const IndexPage = () => {
       <Navbar />
       <h1 id="project-header">Projects</h1>
       <Projects>
-        {projectData.map((project, index) => (
-          <Project
-            key={index}
-            displayName={project.displayName}
-            tools={project.tools}
-            link={project.link}
-            description={project.description}
-            imageSrc={index === 0 ?  dogprojectImg : 
-                      index === 1 ? pokeImg : 
-                      index === 2 ? cpuImg : 
-                      index === 3 ? pyScriptImg :
-                      databaseImg}
-          />
-        ))}
+        {/* DOG PROJECT */}
+        <Project 
+          displayName={projectData[0].displayName}
+          tools={projectData[0].tools}
+          link={projectData[0].link}
+          description={projectData[0].description}
+          imageSrc={dogprojectImg}
+        />
+        {/* PokeAPI PROJECT */}
+        <Project 
+          displayName={projectData[1].displayName}
+          tools={projectData[1].tools}
+          link={projectData[1].link}
+          description={projectData[1].description}
+          imageSrc={pokeImg}
+        />
+        {/* CPU SIMULATION PROJECT */}
+        <Project 
+          displayName={projectData[2].displayName}
+          tools={projectData[2].tools}
+          link={projectData[2].link}
+          description={projectData[2].description}
+          imageSrc={cpuImg}
+        />
+        {/* PYTHON SCRIPTS PROJECT */}
+        <Project 
+          displayName={projectData[3].displayName}
+          tools={projectData[3].tools}
+          link={projectData[3].link}
+          description={projectData[3].description}
+          imageSrc={pyScriptImg}
+        />
+        {/* STUDENT DATABASE PROJECT */}
+        <Project 
+          displayName={projectData[4].displayName}
+          tools={projectData[4].tools}
+          link={projectData[4].link}
+          description={projectData[4].description}
+          imageSrc={databaseImg}
+        />
       </Projects>
     </>
   )
