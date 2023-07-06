@@ -20,6 +20,16 @@ const IndexPage = () => {
       <Helmet>
         <title>Home Page</title>
         <meta name="description" content={metaDescription} />
+
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-8NCTHG7Q5S"></script>
+        <script>
+          {`window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-8NCTHG7Q5S');`}
+        </script>
+
       </Helmet>
       <Navbar />
       <h1 id="project-header">Projects</h1>
