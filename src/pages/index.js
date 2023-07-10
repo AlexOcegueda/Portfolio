@@ -10,6 +10,7 @@ import databaseImg from "../images/database.webp";
 import pokeImg from "../images/pokemon.webp";
 import pyScriptImg from "../images/pythonscripts.webp";
 import dogprojectImg from "../images/dog.webp"; 
+import clinicImg from "../images/clinic.webp";
 
 const IndexPage = () => {
 
@@ -34,6 +35,14 @@ const IndexPage = () => {
       <Navbar />
       <h1 id="project-header">Projects</h1>
       <Projects>
+        {/* CLINIC PROJECT */}
+        <Project 
+            displayName={projectData[5].displayName}
+            tools={projectData[5].tools}
+            link={projectData[5].link}
+            description={projectData[5].description}
+            imageSrc={clinicImg} 
+          />
         {/* DOG PROJECT */}
         <Project 
           displayName={projectData[0].displayName}

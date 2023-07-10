@@ -28,5 +28,11 @@
     "tools": ["Java, SpringBoot, MySQL"],
     "link": "https://github.com/AlexOcegueda/MultiLevelQueues",
     "description": "This is a SpringBoot project of a student database. It is connected with an external SQL database and performs basic CRUD commands."
+  },
+  {
+    "displayName": "Cleveland Clinic Web Crawler",
+    "tools": ["Python", "Selenium", "BeautifulSoup"],
+    "link": "https://github.com/AlexOcegueda/PhobiaDB/tree/main/ClevelandClinicScrape",
+    "description": "This is a web crawler which goes through 28 web pages of diseases and searches through every link relating to a phobia"
   }
 ]

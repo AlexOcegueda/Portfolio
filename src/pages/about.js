@@ -29,8 +29,7 @@ const About = () => {
                 <Description>
                     Recent Wayne State College graduate with 7 months experience in Software Development.
                     Majored in Computer Science. My last position was a full stack role and I was 
-                    completely remote for most of it. I also have freelancing experience which is included 
-                    in my projects.
+                    completely remote for most of it.
                 </Description>   
             </AboutContainer>
             <Tools />
