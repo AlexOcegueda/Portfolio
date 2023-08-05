@@ -13,6 +13,7 @@ const About = () => {
         <>
             <Helmet>
                 <title>About Page</title>
+                <meta name="robots" content="index, follow" />
                 <meta name="description" content={metaDescription} />
                 <script async src="https://www.googletagmanager.com/gtag/js?id=G-8NCTHG7Q5S"></script>
                 <script>
