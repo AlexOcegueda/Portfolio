@@ -1,97 +1,116 @@
-import * as React from "react";
-import './global.css'; 
-import Navbar from "../components/Navbar";
-import Project from "../components/Project"
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
+import Navbar from '../components/Navbar';
 import { Helmet } from 'react-helmet';
-import projectData from "../components/projects.json"
-import cpuImg from "../images/cpu.webp"
-import databaseImg from "../images/database.webp";
-import pokeImg from "../images/pokemon.webp";
-import pyScriptImg from "../images/pythonscripts.webp";
-import dogprojectImg from "../images/dog.webp"; 
-import clinicImg from "../images/clinic.webp";
 
-const IndexPage = () => {
+const metaDescription = "My name is Alex Ocegueda Castro and I am a recent college graduate with 7 months experience";
 
-  const metaDescription = "Welcome to my Portfolio. Check out some of my projects!";
+/* NOTES
+Added 1 rem to left margin to deal with smaller devices
+*/
+const About = () => {
+    return (
+        <>
+            <Helmet>
+                <title>About Page</title>
+                <meta name="description" content={metaDescription} />
+                <script async src="https://www.googletagmanager.com/gtag/js?id=G-8NCTHG7Q5S"></script>
+                <script>
+                {`window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
 
-  return (
-    <>
-      <Helmet>
-        <title>Home Page</title>
-        <meta name="description" content={metaDescription} />
+                gtag('config', 'G-8NCTHG7Q5S');`}
+                </script>
+            </Helmet>
+            <Navbar />
+            <AboutContainer>
+                <h1>About Me</h1>
+                <Description>
+                    Recent Wayne State College graduate with 7 months experience in Software Development.
+                    Majored in Computer Science. My last position was a full stack role and I was 
+                    completely remote for most of it.
+                </Description>   
+            </AboutContainer>
+            <Tools />
+        </>
+    );
+};
 
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-8NCTHG7Q5S"></script>
-        <script>
-          {`window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
+export default About;
 
-          gtag('config', 'G-8NCTHG7Q5S');`}
-        </script>
+const AboutContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    width: 41rem;
 
-      </Helmet>
-      <Navbar />
-      <h1 id="project-header">Projects</h1>
-      <Projects>
-        {/* CLINIC PROJECT */}
-        <Project 
-            displayName={projectData[5].displayName}
-            tools={projectData[5].tools}
-            link={projectData[5].link}
-            description={projectData[5].description}
-            imageSrc={clinicImg} 
-          />
-        {/* DOG PROJECT */}
-        <Project 
-          displayName={projectData[0].displayName}
-          tools={projectData[0].tools}
-          link={projectData[0].link}
-          description={projectData[0].description}
-          imageSrc={dogprojectImg}
-        />
-        {/* PokeAPI PROJECT */}
-        <Project 
-          displayName={projectData[1].displayName}
-          tools={projectData[1].tools}
-          link={projectData[1].link}
-          description={projectData[1].description}
-          imageSrc={pokeImg}
-        />
-        {/* CPU SIMULATION PROJECT */}
-        <Project 
-          displayName={projectData[2].displayName}
-          tools={projectData[2].tools}
-          link={projectData[2].link}
-          description={projectData[2].description}
-          imageSrc={cpuImg}
-        />
-        {/* PYTHON SCRIPTS PROJECT */}
-        <Project 
-          displayName={projectData[3].displayName}
-          tools={projectData[3].tools}
-          link={projectData[3].link}
-          description={projectData[3].description}
-          imageSrc={pyScriptImg}
-        />
-        {/* STUDENT DATABASE PROJECT */}
-        <Project 
-          displayName={projectData[4].displayName}
-          tools={projectData[4].tools}
-          link={projectData[4].link}
-          description={projectData[4].description}
-          imageSrc={databaseImg}
-        />
-      </Projects>
-    </>
-  )
-}
+    @media screen and (max-width: 768px) { /* Medium screens */
+        width: 30rem;
+        margin-left: 1rem;
+    }
 
-export default IndexPage
+    @media screen and (max-width: 576px) { /* Small screens */
+        width: 100%;
+        margin-left: 1rem;
+    }
+`;
 
-const Projects = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+const Description = styled.p`
+    font-weight: 500;
+    @media (max-width: 768px) {
+        margin:0 2rem 0 1rem;
+    }
+`;
+
+const Tools = () => {
+    return (
+        <>
+            <ToolsContainer>
+                <h1 className="tools-header">Tools</h1>
+                <Skills>
+                    <Skill>HTML/CSS</Skill>
+                    <Skill>JavaScript</Skill>
+                    <Skill>Java</Skill>
+                    <Skill>Python</Skill>
+                    <Skill>React</Skill>
+                    <Skill>SQL</Skill>
+                </Skills>
+            </ToolsContainer>
+        </>
+    );
+};
+
+const ToolsContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    white-space: pre-wrap;
+    border-radius: 0.5rem;
+    margin: 5rem 0 5rem 0;
+
+    @media screen and (max-width: 768px) { /* Medium screens */
+        margin: 2rem 1rem 2rem 1rem;
+    }
+`;
+
+const Skill = styled.li`
+    list-style: none;
+    @media (max-width: 768px) {
+        margin-left: 1rem;
+    }
+`;
+
+const Skills = styled.ul`
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 35%;
+    gap: 0.5rem;
+    
+    @media screen and (max-width: 768px) { /* Medium screens */
+        width: 50%;
+    }
+
+    @media screen and (max-width: 576px) { /* Small screens */
+        width: 100%;
+    }
 `;
