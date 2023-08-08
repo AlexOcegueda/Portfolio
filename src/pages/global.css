@@ -10,6 +10,35 @@ body {
   background-color: #3F4739; /* violet */
 }
 
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 0 1.5rem;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  margin-right: 1rem;
+  font-weight: 600;
+  list-style: none;
+  cursor: pointer;
+  text-decoration: none;
+  color: #717568;
+  &:hover {
+      color: white;
+  }
+}
+
+.logo {
+  color: #F1BF98;
+  font-size: 20px;
+  font-weight: bold;
+}
+
 p {
   font-size: medium;
 }
@@ -27,11 +56,116 @@ a, ul, li, p {
   color: whitesmoke;
 }
 
-#tool {
-  color: rgb(224, 232, 255);
-}
+
 
 img {
   width: 100%; 
   height: auto;
+}
+
+/* Projects */
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.project-container {
+  display: flex;
+  width: 40rem;
+  height: 15rem;
+  margin-top: 2rem;
+  padding: 1rem;
+
+  @media screen and (max-width: 768px) { /* Medium screens */
+      width: 30rem;
+      height: 13rem;
+  }
+
+  @media screen and (max-width: 576px) { /* Small screens */
+      width: 25rem;
+      flex-direction: column;
+      height: auto;
+  }
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.project-description {
+  color: white;
+  margin-right: .5rem;
+}
+
+.github-link {
+  margin-left: 0.3rem;
+  font-weight: semi-bold;
+}
+
+#tool {
+  color: rgb(224, 232, 255);
+  display: flex;
+  font-weight: semi-bold;
+}
+
+/* About */
+.about-container {
+  display: flex;
+    flex-direction: column;
+    width: 41rem;
+
+    @media screen and (max-width: 768px) { /* Medium screens */
+        width: 30rem;
+        margin-left: 1rem;
+    }
+
+    @media screen and (max-width: 576px) { /* Small screens */
+        width: 100%;
+        margin-left: 1rem;
+    }
+}
+
+.about-description {
+  font-weight: 500;
+  @media (max-width: 768px) {
+      margin:0 2rem 0 1rem;
+  }
+}
+
+.tools-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  white-space: pre-wrap;
+  border-radius: 0.5rem;
+  margin: 5rem 0 5rem 0;
+
+  @media screen and (max-width: 768px) { /* Medium screens */
+      margin: 2rem 1rem 2rem 1rem;
+  }
+}
+
+.skill {
+  list-style: none;
+  @media (max-width: 768px) {
+      margin-left: 1rem;
+  }
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 35%;
+  gap: 0.5rem;
+  
+  @media screen and (max-width: 768px) { /* Medium screens */
+      width: 50%;
+  }
+
+  @media screen and (max-width: 576px) { /* Small screens */
+      width: 100%;
+  }
 }

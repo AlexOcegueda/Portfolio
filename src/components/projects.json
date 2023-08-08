@@ -1,13 +1,13 @@
 [
   {
     "displayName": "Dog Match Maker",
-    "tools": ["Gatsby", "React", "CEO DogAPI"],
+    "tools": ["Gatsby, React, CEO DogAPI"],
     "link": "https://github.com/AlexOcegueda/NHS_match_maker",
     "description": "Built prototype filter and match making system for a local animal shelter."
   },
   {
     "displayName": "PokeAPI Pokedex",
-    "tools": ["React", "JavaScript"],
+    "tools": ["React, JavaScript"],
     "link": "https://github.com/AlexOcegueda/pokeapi_pokedex",
     "description": "Built mobile friendly website to display original 151 pokemon."
   },
@@ -19,7 +19,7 @@
   },
   {
     "displayName": "Python Scripts",
-    "tools": ["Python", "Turtle", "PyQt5"],
+    "tools": ["Python, Turtle, PyQt5"],
     "link": "https://github.com/AlexOcegueda/Python_Scripts/",
     "description": "Collection of Python scripts I've done in and outside of college."
   },
@@ -31,7 +31,7 @@
   },
   {
     "displayName": "Cleveland Clinic Web Crawler",
-    "tools": ["Python", "Selenium", "BeautifulSoup"],
+    "tools": ["Python, Selenium, BeautifulSoup"],
     "link": "https://github.com/AlexOcegueda/PhobiaDB/tree/main/ClevelandClinicScrape",
     "description": "This is a web crawler which goes through 28 web pages of diseases and searches through every link relating to a phobia"
   }

@@ -1,7 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
 import Navbar from '../components/Navbar';
-import { Helmet } from 'react-helmet';
 
 const metaDescription = "My name is Alex Ocegueda Castro and I am a recent college graduate with 7 months experience";
 
@@ -13,14 +11,14 @@ const About = () => {
         <>
             
             <Navbar />
-            <AboutContainer>
+            <div className='about-container'>
                 <h1>About Me</h1>
-                <Description>
+                <p className='about-description'>
                     Recent Wayne State College graduate with 7 months experience in Software Development.
                     Majored in Computer Science. My last position was a full stack role and I was 
                     completely remote for most of it.
-                </Description>   
-            </AboutContainer>
+                </p>   
+            </div>
             <Tools />
         </>
     );
@@ -28,78 +26,20 @@ const About = () => {
 
 export default About;
 
-const AboutContainer = styled.div`
-    display: flex;
-    flex-direction: column;
-    width: 41rem;
-
-    @media screen and (max-width: 768px) { /* Medium screens */
-        width: 30rem;
-        margin-left: 1rem;
-    }
-
-    @media screen and (max-width: 576px) { /* Small screens */
-        width: 100%;
-        margin-left: 1rem;
-    }
-`;
-
-const Description = styled.p`
-    font-weight: 500;
-    @media (max-width: 768px) {
-        margin:0 2rem 0 1rem;
-    }
-`;
-
 const Tools = () => {
     return (
         <>
-            <ToolsContainer>
+            <div className='tools-container'>
                 <h1 className="tools-header">Tools</h1>
-                <Skills>
-                    <Skill>HTML/CSS</Skill>
-                    <Skill>JavaScript</Skill>
-                    <Skill>Java</Skill>
-                    <Skill>Python</Skill>
-                    <Skill>React</Skill>
-                    <Skill>SQL</Skill>
-                </Skills>
-            </ToolsContainer>
+                <ul className='skills'>
+                    <li className='skill'>HTML/CSS</li>
+                    <li className='skill'>JavaScript</li>
+                    <li className='skill'>Java</li>
+                    <li className='skill'>Python</li>
+                    <li className='skill'>React</li>
+                    <li className='skill'>SQL</li>
+                </ul>
+            </div>
         </>
     );
 };
-
-const ToolsContainer = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    white-space: pre-wrap;
-    border-radius: 0.5rem;
-    margin: 5rem 0 5rem 0;
-
-    @media screen and (max-width: 768px) { /* Medium screens */
-        margin: 2rem 1rem 2rem 1rem;
-    }
-`;
-
-const Skill = styled.li`
-    list-style: none;
-    @media (max-width: 768px) {
-        margin-left: 1rem;
-    }
-`;
-
-const Skills = styled.ul`
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    width: 35%;
-    gap: 0.5rem;
-    
-    @media screen and (max-width: 768px) { /* Medium screens */
-        width: 50%;
-    }
-
-    @media screen and (max-width: 576px) { /* Small screens */
-        width: 100%;
-    }
-`;
