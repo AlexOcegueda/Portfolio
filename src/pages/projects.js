@@ -1,18 +1,10 @@
 import * as React from "react";
 import './global.css'; 
 import Navbar from "../components/Navbar";
-import Project from "../components/Project"
 import styled from "styled-components";
 import { Helmet } from 'react-helmet';
 import projectData from "../components/projects.json"
-
-// imgs
-import cpuImg from "../images/cpu.webp"
-import databaseImg from "../images/database.webp";
-import pokeImg from "../images/pokemon.webp";
-import pyScriptImg from "../images/pythonscripts.webp";
-import dogprojectImg from "../images/dog.webp"; 
-import clinicImg from "../images/clinic.webp";
+import { StaticImage } from "gatsby-plugin-image";
 
 const IndexPage = () => {
 
@@ -38,53 +30,142 @@ const IndexPage = () => {
       <h1 id="project-header">Projects</h1>
       <Projects>
         {/* CLINIC PROJECT */}
-        <Project 
-            displayName={projectData[5].displayName}
-            tools={projectData[5].tools}
-            link={projectData[5].link}
-            description={projectData[5].description}
-            imageSrc={clinicImg} 
-          />
+        <Container>
+            <Text>
+                <h2>{projectData[5].displayName}</h2>
+                <Tools id='tool'>{projectData[5].tools}</Tools>
+                <Description>{projectData[5].description}</Description>
+                <Link href={projectData[5].link}>See on Github →</Link>
+            </Text>
+            <StaticImage
+              src="../images/clinic.webp"
+              layout="fixed"
+              width={500}
+              height={200}
+              style={{
+                borderRadius: '1rem',
+                objectFit: 'cover',
+                maxWidth: '100%',
+                height: 'auto',
+                // Add any other styles you need
+              }}
+              alt="Project Image"
+            />
+        </Container>
         {/* DOG PROJECT */}
-        <Project 
-          displayName={projectData[0].displayName}
-          tools={projectData[0].tools}
-          link={projectData[0].link}
-          description={projectData[0].description}
-          imageSrc={dogprojectImg}
-        />
+        <Container>
+            <Text>
+                <h2>{projectData[0].displayName}</h2>
+                <Tools id='tool'>{projectData[0].tools}</Tools>
+                <Description>{projectData[0].description}</Description>
+                <Link href={projectData[0].link}>See on Github →</Link>
+            </Text>
+            <StaticImage
+              src="../images/dog.webp"
+              layout="fixed"
+              width={500}
+              height={200}
+              style={{
+                borderRadius: '1rem',
+                objectFit: 'cover',
+                maxWidth: '100%',
+                height: 'auto',
+                // Add any other styles you need
+              }}
+              alt="Project Image"
+            />
+        </Container>
         {/* PokeAPI PROJECT */}
-        <Project 
-          displayName={projectData[1].displayName}
-          tools={projectData[1].tools}
-          link={projectData[1].link}
-          description={projectData[1].description}
-          imageSrc={pokeImg}
-        />
+        <Container>
+            <Text>
+                <h2>{projectData[1].displayName}</h2>
+                <Tools id='tool'>{projectData[1].tools}</Tools>
+                <Description>{projectData[1].description}</Description>
+                <Link href={projectData[1].link}>See on Github →</Link>
+            </Text>
+            <StaticImage
+              src="../images/pokemon.webp"
+              layout="fixed"
+              width={500}
+              height={200}
+              style={{
+                borderRadius: '1rem',
+                objectFit: 'cover',
+                maxWidth: '100%',
+                height: 'auto',
+              }}
+              alt="Project Image"
+            />
+        </Container>
         {/* CPU SIMULATION PROJECT */}
-        <Project 
-          displayName={projectData[2].displayName}
-          tools={projectData[2].tools}
-          link={projectData[2].link}
-          description={projectData[2].description}
-          imageSrc={cpuImg}
-        />
+        <Container>
+            <Text>
+                <h2>{projectData[2].displayName}</h2>
+                <Tools id='tool'>{projectData[2].tools}</Tools>
+                <Description>{projectData[2].description}</Description>
+                <Link href={projectData[2].link}>See on Github →</Link>
+            </Text>
+            <StaticImage
+              src="../images/cpu.webp"
+              layout="fixed"
+              width={500}
+              height={200}
+              style={{
+                borderRadius: '1rem',
+                objectFit: 'cover',
+                maxWidth: '100%',
+                height: 'auto',
+                // Add any other styles you need
+              }}
+              alt="Project Image"
+            />
+        </Container>
         {/* PYTHON SCRIPTS PROJECT */}
-        <Project 
-          displayName={projectData[3].displayName}
-          tools={projectData[3].tools}
-          link={projectData[3].link}
-          description={projectData[3].description}
-          imageSrc={pyScriptImg}
-        />
+        <Container>
+            <Text>
+                <h2>{projectData[3].displayName}</h2>
+                <Tools id='tool'>{projectData[3].tools}</Tools>
+                <Description>{projectData[3].description}</Description>
+                <Link href={projectData[3].link}>See on Github →</Link>
+            </Text>
+            <StaticImage
+              src="../images/pythonscripts.webp"
+              layout="fixed"
+              width={500}
+              height={200}
+              style={{
+                borderRadius: '1rem',
+                objectFit: 'cover',
+                maxWidth: '100%',
+                height: 'auto',
+                // Add any other styles you need
+              }}
+              alt="Project Image"
+            />
+        </Container>
         {/* STUDENT DATABASE PROJECT */}
-        <Project 
-          displayName={projectData[4].displayName}
-          tools={projectData[4].tools}
-          link={projectData[4].link}
-          description={projectData[4].description}
-          imageSrc={databaseImg}
-        />
+        <Container>
+            <Text>
+                <h2>{projectData[4].displayName}</h2>
+                <Tools id='tool'>{projectData[4].tools}</Tools>
+                <Description>{projectData[4].description}</Description>
+                <Link href={projectData[4].link}>See on Github →</Link>
+            </Text>
+            <StaticImage
+              src="../images/database.webp"
+              layout="fixed"
+              width={500}
+              height={200}
+              style={{
+                borderRadius: '1rem',
+                objectFit: 'cover',
+                maxWidth: '100%',
+                height: 'auto',
+                // Add any other styles you need
+              }}
+              alt="Project Image"
+            />
+        </Container>
       </Projects>
     </>
   )
@@ -96,4 +177,44 @@ const Projects = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+`;
+
+const Text = styled.div`
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+`;
+
+const Container = styled.div`
+    display: flex;
+    width: 40rem;
+    height: 15rem;
+    margin-top: 2rem;
+    padding: 1rem;
+
+    @media screen and (max-width: 768px) { /* Medium screens */
+        width: 30rem;
+        height: 13rem;
+    }
+
+    @media screen and (max-width: 576px) { /* Small screens */
+        width: 25rem;
+        flex-direction: column;
+        height: auto;
+    }
+`;
+
+const Tools = styled.span`
+    display: flex;
+    font-weight: semi-bold;
+`;
+
+const Link = styled.a`
+    margin-left: 0.3rem;
+    font-weight: semi-bold;
+`;
+
+const Description = styled.p`
+    color: white;
+    margin-right: .5rem;
 `;

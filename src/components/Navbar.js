@@ -28,9 +28,6 @@ const Nav = styled.nav`
     justify-content: space-between;
     padding: 1.5rem 0 1.5rem;
 
-    @media (max-width: 576px) { /*  Med Length */
-        margin-left: 1rem;
-    }
 `;
 
 const Name = styled.p`

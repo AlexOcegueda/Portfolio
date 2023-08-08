@@ -3,13 +3,14 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `portfolio`,
-    siteUrl: `https://www.yourdomain.tld`,
-  },
-  plugins: [],
-  siteMetadata: {
     title: 'Alex Ocegueda Castro',
     description: 'Web Development Portfolio',
-    copyright: 'Copyright 2023 Alex Ocegueda Castro'
-  }
-}
+    copyright: 'Copyright 2023 Alex Ocegueda Castro',
+    siteUrl: 'https://www.Ocegueda.dev', 
+  },
+  plugins: [
+    'gatsby-plugin-image',
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
+  ],
+};
