@@ -15,8 +15,9 @@ const IndexPage = () => {
       <Navbar />
       <h1 id="project-header">Projects</h1>
       <Projects>
+        <h1>TEST</h1>
         {/* CLINIC PROJECT */}
-        <Container>
+        {/* <Container>
             <Text>
                 <h2>{projectData[5].displayName}</h2>
                 <Tools id='tool'>{projectData[5].tools}</Tools>
@@ -151,7 +152,7 @@ const IndexPage = () => {
               }}
               alt="Project Image"
             />
-        </Container>
+        </Container> */}
       </Projects>
     </>
   )
