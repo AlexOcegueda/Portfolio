@@ -13,8 +13,8 @@ const Navbar = () => {
         <Nav>
             <Name>Alex Ocegueda Castro</Name>
             <NavLinks className='nav-links'>
-                <NavLink to="/">About</NavLink>
-                <NavLink to="/projects">Projects</NavLink>
+                <NavLink to="/about">About</NavLink>
+                <NavLink to="/">Projects</NavLink>
                 {/*<ResumeButton onClick={handleResumeClick}>Resume</ResumeButton>*/}
             </NavLinks>
         </Nav>
