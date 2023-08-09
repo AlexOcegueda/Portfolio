@@ -56,8 +56,6 @@ a, ul, li, p {
   color: whitesmoke;
 }
 
-
-
 img {
   width: 100%; 
   height: auto;
@@ -76,17 +74,6 @@ img {
   height: 15rem;
   margin-top: 2rem;
   padding: 1rem;
-
-  @media screen and (max-width: 768px) { /* Medium screens */
-      width: 30rem;
-      height: 13rem;
-  }
-
-  @media screen and (max-width: 576px) { /* Small screens */
-      width: 25rem;
-      flex-direction: column;
-      height: auto;
-  }
 }
 
 .text-container {
@@ -114,25 +101,12 @@ img {
 /* About */
 .about-container {
   display: flex;
-    flex-direction: column;
-    width: 41rem;
-
-    @media screen and (max-width: 768px) { /* Medium screens */
-        width: 30rem;
-        margin-left: 1rem;
-    }
-
-    @media screen and (max-width: 576px) { /* Small screens */
-        width: 100%;
-        margin-left: 1rem;
-    }
+  flex-direction: column;
+  width: 41rem; 
 }
 
 .about-description {
   font-weight: 500;
-  @media (max-width: 768px) {
-      margin:0 2rem 0 1rem;
-  }
 }
 
 .tools-container {
@@ -142,17 +116,10 @@ img {
   white-space: pre-wrap;
   border-radius: 0.5rem;
   margin: 5rem 0 5rem 0;
-
-  @media screen and (max-width: 768px) { /* Medium screens */
-      margin: 2rem 1rem 2rem 1rem;
-  }
 }
 
 .skill {
   list-style: none;
-  @media (max-width: 768px) {
-      margin-left: 1rem;
-  }
 }
 
 .skills {
@@ -160,12 +127,61 @@ img {
   grid-template-columns: repeat(3, 1fr);
   width: 35%;
   gap: 0.5rem;
-  
-  @media screen and (max-width: 768px) { /* Medium screens */
-      width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+
+  .about-container {
+    width: 30rem;
+    margin-left: 1rem;
   }
 
-  @media screen and (max-width: 576px) { /* Small screens */
-      width: 100%;
+  .about-description {
+    margin:0 2rem 0 1rem;
   }
+
+  .skill {
+    margin-left: 1rem;
+  }
+
+  .skills {
+    width: 50%;
+  }
+
+  .project-container {
+    width: 30rem;
+    height: 13rem;  
+  }
+
+  .tools-container {
+    margin: 2rem 1rem 2rem 1rem;
+  }
+
+}
+
+@media screen and (max-width: 576px) {
+
+  .logo {
+    margin-left: 1rem;
+  }
+
+  #project-header {
+    margin-left: 1rem;
+  }
+
+  .project-container {
+    width: 25rem;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .about-container {
+    width: 100%;
+    margin-left: 1rem;
+  }
+
+  .skills {
+    width: 100%;
+  }
+
 }
