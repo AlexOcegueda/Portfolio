@@ -15,13 +15,13 @@
     "displayName": "CPU Task Simulator",
     "tools": ["Java"],
     "link": "https://github.com/AlexOcegueda/MultiLevelQueues",
-    "description": "Uses a 3 layered priority queue algorithm to simulate how a CPU schedules incoming tasks. Utilizes Round Robin and First Come First Serve algorithms as well."
+    "description": "Uses a 3 layered priority queue algorithm to simulate how a CPU schedules incoming tasks. Utilizes Round Robin and First Come First Serve algorithms."
   },
   {
     "displayName": "Python Scripts",
     "tools": ["Python, Turtle, PyQt5"],
     "link": "https://github.com/AlexOcegueda/Python_Scripts/",
-    "description": "Collection of Python scripts I've done in and outside of college."
+    "description": "Collection of Python scripts I've done in college."
   },
   {
     "displayName": "Student Database",
@@ -33,12 +33,12 @@
     "displayName": "Cleveland Clinic Crawler",
     "tools": ["Python, Selenium, BeautifulSoup"],
     "link": "https://github.com/AlexOcegueda/PhobiaDB/tree/main/ClevelandClinicScrape",
-    "description": "This is a web crawler which goes through 28 web pages of diseases and searches through every link relating to a phobia"
+    "description": "This is a web crawler which goes through 28 web pages of diseases and searches through every link relating to a phobias."
   },
   {
     "displayName": "Phobia Database",
     "tools": ["Flask"],
     "link": "https://github.com/AlexOcegueda/PhobiaDB",
-    "description": "This is a database full of phobias which I scraped from the Cleveland clinic. It allows you to choose from a dropdown to learn more about whichever phobia you choose."
+    "description": "This is a database full of phobias which I scraped from the Cleveland clinic website. It allows you to choose from a dropdown to learn more about whichever phobia you choose. Link is on my Github"
   }
 ]
