@@ -13,6 +13,28 @@ const IndexPage = () => {
       <Navbar />
       <h1 id="project-header">Projects</h1>
       <main className="projects">
+      {/* PHOBIA DATABASE PROJECT */}
+        <div className="project-container">
+            <div className="text-container">
+                <h2>{projectData[6].displayName}</h2>
+                <span id='tool'>{projectData[6].tools}</span>
+                <p className="project-description">{projectData[6].description}</p>
+                <a className="github-link" href={projectData[6].link}>See on Github →</a>
+            </div>
+            <StaticImage
+              src="../images/phobia.webp"
+              layout="fixed"
+              width={500}
+              height={200}
+              style={{
+                borderRadius: '1rem',
+                objectFit: 'cover',
+                maxWidth: '100%',
+                height: 'auto',
+              }}
+              alt="Project Image"
+            />
+        </div>
         {/* CLINIC PROJECT */}
         <div className="project-container">
             <div className="text-container">
