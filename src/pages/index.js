@@ -6,7 +6,7 @@ import { StaticImage } from "gatsby-plugin-image";
 
 const IndexPage = () => {
 
-  const metaDescription = "Welcome to my Portfolio. Check out some of my projects!";
+  //const metaDescription = "Welcome to my Portfolio. Check out some of my projects!";
 
   return (
     <>
