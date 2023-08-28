@@ -8,6 +8,7 @@ body {
   display: flex;
   justify-content: center;
   background-color: #3F4739; /* violet */
+  font-family: 'Playfair Display', serif;
 }
 
 nav {
@@ -28,9 +29,26 @@ nav {
   cursor: pointer;
   text-decoration: none;
   color: #717568;
-  &:hover {
-      color: white;
-  }
+  position: relative; /* Add this */
+}
+
+.nav-link:hover {
+  color: white;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -2px; /* Adjust as needed */
+  left: 0;
+  width: 0;
+  height: 2px; /* Adjust as needed */
+  background-color: white; /* or any other color you want */
+  transition: width 0.4s ease; /* Animation transition properties */
+}
+
+.nav-link:hover::after {
+  width: 100%; /* Animate the width to 100% on hover */
 }
 
 .logo {
@@ -124,6 +142,8 @@ a, ul, li, p {
   gap: 0.5rem;
 }
 
+
+/* Med Screen */
 @media screen and (max-width: 768px) {
 
   .about-container {
@@ -154,10 +174,11 @@ a, ul, li, p {
 
 }
 
+/* Small Screen */
 @media screen and (max-width: 576px) {
 
   .logo {
-    margin-left: 1rem;
+    margin: 0rem 1rem 0rem 1rem;
   }
 
   #project-header {
@@ -179,4 +200,36 @@ a, ul, li, p {
     width: 80%;
   }
 
+}
+
+/* Animation */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.fade-in-out {
+  animation-duration: 1s; /* Adjust the duration as needed */
+  animation-fill-mode: both;
+}
+
+.fade-in-out.fade-in {
+  animation-name: fade-in;
+}
+
+.fade-in-out.fade-out {
+  animation-name: fade-out;
 }

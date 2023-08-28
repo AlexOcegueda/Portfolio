@@ -22,22 +22,3 @@ const Navbar = () => {
 
 export default Navbar;
 
-// const ResumeButton = styled.button`
-//     margin-right: 1rem;
-//     font-weight: 400;
-//     font-size: 14px;
-//     list-style: none;
-//     cursor: pointer;
-//     text-decoration: none;
-//     color: black;
-//     background-color: #F1BF98;
-//     border: 1px solid black;
-//     border-radius: 1rem;
-//     padding: .5rem 1rem .5rem 1rem;
-//     vertical-align: middle; /* Align the button vertically */
-//     &:hover {
-//         color: white;
-//         background-color: #FFCAA1;
-//         border: 1px solid #FFCAA1;
-//     }
-// `;
