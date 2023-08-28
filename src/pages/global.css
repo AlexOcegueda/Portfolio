@@ -56,11 +56,6 @@ a, ul, li, p {
   color: whitesmoke;
 }
 
-img {
-  width: 100%; 
-  height: auto;
-}
-
 /* Projects */
 .projects {
   display: flex;
@@ -170,7 +165,7 @@ img {
   }
 
   .project-container {
-    width: 25rem;
+    width: 20rem;
     flex-direction: column;
     height: auto;
   }
@@ -181,7 +176,7 @@ img {
   }
 
   .skills {
-    width: 100%;
+    width: 80%;
   }
 
 }
