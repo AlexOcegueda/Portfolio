@@ -33,12 +33,12 @@
     "displayName": "Cleveland Clinic Crawler",
     "tools": ["Python, Selenium, BeautifulSoup"],
     "link": "https://github.com/AlexOcegueda/PhobiaDB/tree/main/ClevelandClinicScrape",
-    "description": "This is a web crawler which goes through 28 web pages of diseases and searches through every link relating to a phobias."
+    "description": "This is a web crawler which goes through 28 web pages of diseases and searches through every link relating to phobias."
   },
   {
     "displayName": "Phobia Database",
     "tools": ["Flask"],
     "link": "https://github.com/AlexOcegueda/PhobiaDB",
-    "description": "This is a database full of phobias which I scraped from the Cleveland clinic website. It allows you to choose from a dropdown to learn more about whichever phobia you choose. Link is on my Github"
+    "description": "This is a database full of phobias which I scraped from the Cleveland clinic website. It allows you to choose from a dropdown to learn more about whichever phobia you choose."
   }
 ]
