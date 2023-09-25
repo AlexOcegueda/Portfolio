@@ -163,7 +163,7 @@ const IndexPage = () => {
             </a>
           </div>
           <StaticImage
-            src="../images/dog.webp"
+            src="../images/petmatch.webp"
             layout="fixed"
             width={500}
             height={200}
