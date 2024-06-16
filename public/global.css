@@ -195,12 +195,30 @@ ul, li, p {
   border-radius: 1rem;
 }
 
+/* Navbar */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #3F4739; /* Same as body background color or any desired color */
+  padding: 1rem;
+  z-index: 1000; /* Ensure the navbar is on top of other elements */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 1170px) {
+  nav {
+    position: static !important; /* Change navbar to static position on medium screens */
+    width: 80% !important; /* Ensure width is 100% */
+  }
+}
 
 /* Med Screen */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 860px) {
   .about-container {
     width: 30rem;
-    margin-left: 1rem;
   }
 
   .about-description {
@@ -223,12 +241,29 @@ ul, li, p {
   .tools-container {
     margin: 2rem 1rem;
   }
+
+  nav {
+    position: static !important; /* Change navbar to static position on medium screens */
+    width: 75% !important; /* Ensure width is 100% */
+  }
+
+  .logo {
+    font-size: 1.5rem !important; /* Adjust font size for logo */
+  }
+}
+
+@media screen and (max-width: 680px) {
+  nav {
+    position: static !important; /* Change navbar to static position on medium screens */
+    width: 85% !important; /* Ensure width is 100% */
+  }
 }
 
 /* Small Screen */
 @media screen and (max-width: 576px) {
   .logo {
-    margin: 0 1rem;
+    font-size: 1.2rem !important;
+    margin: 0 1rem !important;
   }
 
   #project-header {
@@ -243,11 +278,15 @@ ul, li, p {
 
   .about-container {
     width: 100%;
-    margin-left: 1rem;
   }
 
   .skills {
     width: 80%;
+  }
+
+  nav {
+    position: static !important; /* Change navbar to static position on small screens */
+    width: 100% !important; /* Ensure width is 100% */
   }
 }
 
@@ -311,5 +350,3 @@ ul, li, p {
   position: absolute;
   transform: translate(-50%, -50%);
 }
-
-
