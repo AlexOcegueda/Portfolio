@@ -1,38 +1,10 @@
 [
   {
-    "displayName": "Dog Match Maker",
-    "tools": ["Gatsby, React, CEO DogAPI"],
-    "link": "https://github.com/AlexOcegueda/NHS_match_maker",
-    "description": "Built prototype filter and match making system for a local animal shelter.",
-    "image": "/images/dog.webp"
-  },
-  {
-    "displayName": "PokeAPI Pokedex",
-    "tools": ["React, JavaScript"],
-    "link": "https://github.com/AlexOcegueda/pokeapi_pokedex",
-    "description": "Built mobile friendly website to display original 151 pokemon.",
-    "image": "/images/pokemon.webp"
-  },
-  {
-    "displayName": "CPU Task Simulator",
-    "tools": ["Java"],
-    "link": "https://github.com/AlexOcegueda/MultiLevelQueues",
-    "description": "Uses a 3 layered priority queue algorithm to simulate how a CPU schedules incoming tasks. Utilizes Round Robin and First Come First Serve algorithms.",
-    "image": "/images/cpu.webp"
-  },
-  {
-    "displayName": "Python Scripts",
-    "tools": ["Python, Turtle, PyQt5"],
-    "link": "https://github.com/AlexOcegueda/Python_Scripts/",
-    "description": "Collection of Python scripts I've done in college.",
-    "image": "/images/pythonscripts.webp"
-  },
-  {
-    "displayName": "Student Database",
-    "tools": ["Java, SpringBoot, MySQL"],
-    "link": "https://github.com/AlexOcegueda/MultiLevelQueues",
-    "description": "This is a SpringBoot project of a student database. It is connected with an external SQL database and performs basic CRUD commands.",
-    "image": "/images/database.webp"
+    "displayName": "Phobia Database",
+    "tools": ["Flask"],
+    "link": "https://github.com/AlexOcegueda/PhobiaDB",
+    "description": "This is a database full of phobias which I scraped from the Cleveland clinic website. It allows you to choose from a dropdown to learn more about whichever phobia you choose.",
+    "image": "/images/phobia.webp"
   },
   {
     "displayName": "Cleveland Clinic Crawler",
@@ -42,10 +14,38 @@
     "image": "/images/clinic.webp"
   },
   {
-    "displayName": "Phobia Database",
-    "tools": ["Flask"],
-    "link": "https://github.com/AlexOcegueda/PhobiaDB",
-    "description": "This is a database full of phobias which I scraped from the Cleveland clinic website. It allows you to choose from a dropdown to learn more about whichever phobia you choose.",
-    "image": "/images/phobia.webp"
+    "displayName": "Dog Match Maker",
+    "tools": ["Gatsby, React, CEO DogAPI"],
+    "link": "https://github.com/AlexOcegueda/NHS_match_maker",
+    "description": "Built prototype filter and match making system for a local animal shelter.",
+    "image": "/images/dog.webp"
+  },
+  {
+    "displayName": "CPU Task Simulator",
+    "tools": ["Java"],
+    "link": "https://github.com/AlexOcegueda/MultiLevelQueues",
+    "description": "Uses a 3 layered priority queue algorithm to simulate how a CPU schedules incoming tasks. Utilizes Round Robin and First Come First Serve algorithms.",
+    "image": "/images/cpu.webp"
+  },
+  {
+    "displayName": "PokeAPI Pokedex",
+    "tools": ["React, JavaScript"],
+    "link": "https://github.com/AlexOcegueda/pokeapi_pokedex",
+    "description": "Built mobile friendly website to display original 151 pokemon.",
+    "image": "/images/pokemon.webp"
+  },
+  {
+    "displayName": "Student Database",
+    "tools": ["Java, SpringBoot, MySQL"],
+    "link": "https://github.com/AlexOcegueda/MultiLevelQueues",
+    "description": "This is a SpringBoot project of a student database. It is connected with an external SQL database and performs basic CRUD commands.",
+    "image": "/images/database.webp"
+  },
+  {
+    "displayName": "Python Scripts",
+    "tools": ["Python, Turtle, PyQt5"],
+    "link": "https://github.com/AlexOcegueda/Python_Scripts/",
+    "description": "Collection of Python scripts I've done in college.",
+    "image": "/images/pythonscripts.webp"
   }
 ]
