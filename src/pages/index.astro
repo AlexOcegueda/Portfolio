@@ -1,0 +1,30 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+import projectData from '../components/projects.json';
+
+const projects = projectData;
+---
+
+<MainLayout>
+  <div class="circle-container">
+    <div class="circle" id="circle"></div>
+    <div class="dot" id="dot"></div>
+  </div>
+  <div class="heading-container">
+    <h1 id="project-header">Projects</h1>
+  </div>
+  <main class="projects">
+    {projects.map((project, index) => (
+      <div class="project-container fade-in-out" data-project-id={project.id}>
+        <div class="text-container">
+          <h2>{project.displayName}</h2>
+          <span id="tool">{project.tools.join(', ')}</span>
+          <p class="project-description">{project.description}</p>
+          <a class="github-link" href={project.link}>See on Github →</a>
+        </div>
+        <img src={project.image} alt="Project Image" style="border-radius: 1rem; object-fit: cover; max-width: 100%; height: auto;" />
+      </div>
+    ))}
+  </main>
+  <script type="module" src="/scripts/animations.js"></script>
+</MainLayout>

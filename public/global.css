@@ -1,0 +1,287 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #3F4739; /* violet */
+  font-family: 'Playfair Display', serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  margin-top: 4rem; /* Adjust based on the height of the navbar */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  padding: 1rem;
+}
+
+
+.heading-container {
+  display: flex;
+}
+
+#project-header {
+  justify-content: flex-start;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  margin-right: 1rem;
+  font-weight: 600;
+  list-style: none;
+  cursor: pointer;
+  text-decoration: none;
+  color: #717568;
+  position: relative;
+}
+
+.nav-link:hover {
+  color: white;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: width 0.4s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.logo {
+  color: #F1BF98;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+p {
+  font-size: medium;
+}
+
+h1 {
+  color: #BACBA9;
+}
+
+h2 {
+  color: #E1F4CB;
+}
+
+a, ul, li, p {
+  color: whitesmoke;
+}
+
+/* Projects */
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-container {
+  display: flex;
+  width: 40rem;
+  height: 15rem;
+  margin-top: 2rem;
+  padding: 1rem;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.project-description {
+  color: white;
+  margin-right: .5rem;
+}
+
+.github-link {
+  margin-left: 0.3rem;
+  font-weight: semi-bold;
+}
+
+#tool {
+  color: rgb(224, 232, 255);
+  display: flex;
+  font-weight: semi-bold;
+}
+
+/* About */
+.about-container {
+  display: flex;
+  flex-direction: column;
+  width: 41rem;
+}
+
+.about-description {
+  font-weight: 500;
+}
+
+.tools-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  white-space: pre-wrap;
+  border-radius: 0.5rem;
+  margin: 5rem 0;
+}
+
+.skill {
+  list-style: none;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 35%;
+  gap: 0.5rem;
+}
+
+.project-container img {
+  width: 100%;
+  height: auto;
+  max-width: 500px; /* Adjust as needed */
+  max-height: 200px; /* Adjust as needed */
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+
+/* Med Screen */
+@media screen and (max-width: 768px) {
+  .about-container {
+    width: 30rem;
+    margin-left: 1rem;
+  }
+
+  .about-description {
+    margin: 0 2rem 0 1rem;
+  }
+
+  .skill {
+    margin-left: 1rem;
+  }
+
+  .skills {
+    width: 50%;
+  }
+
+  .project-container {
+    width: 30rem;
+    height: 13rem;
+  }
+
+  .tools-container {
+    margin: 2rem 1rem;
+  }
+}
+
+/* Small Screen */
+@media screen and (max-width: 576px) {
+  .logo {
+    margin: 0 1rem;
+  }
+
+  #project-header {
+    margin-left: 1rem;
+  }
+
+  .project-container {
+    width: 20rem;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .about-container {
+    width: 100%;
+    margin-left: 1rem;
+  }
+
+  .skills {
+    width: 80%;
+  }
+}
+
+/* Animation */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.fade-in-out {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.fade-in-out.fade-in {
+  animation-name: fade-in;
+}
+
+.fade-in-out.fade-out {
+  animation-name: fade-out;
+}
+
+/* Mouse Circle */
+.circle-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1000; /* Ensure the circle and dot are on top of other elements */
+}
+
+.circle {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border: 2px solid lightgray;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.dot {
+  width: 5px;
+  height: 5px;
+  background-color: lightgray;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+
