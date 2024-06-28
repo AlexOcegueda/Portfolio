@@ -1,0 +1,17 @@
+[
+	{
+		"name": "What The Buddha Taught",
+		"img": "../../images/buddha.webp",
+		"description": "You don't have to be Buddhist to reap the benefits of its teachings. Use it to become a better whatever you already are."
+	},
+	{
+		"name": "Harry Potter and The Methods of Rationality",
+		"img": "../../images/hpmor.jpg",
+		"description": "Fan fiction where in this version, Harry's aunt Petunia marries a scientist, and Harry grows up with a deep love for logic, reason, and the scientific method."
+	},
+	{
+		"name": "The Grief Recovery Handbook",
+		"img": "../../images/grhb.jpg",
+		"description": "'We recieve more education about simple first aid than we do about death, divorce, and or other emotional losses.'"
+	}
+]

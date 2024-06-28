@@ -31,7 +31,7 @@ nav {
 }
 
 main {
-  margin-top: 4rem; /* Adjust based on the height of the navbar */
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -45,19 +45,80 @@ a {
   text-decoration: none;
 }
 
-.about-container {
+p {
+  font-size: medium;
+}
+
+h2 {
+  color: rgb(224, 232, 255);
+  text-align: center;
+}
+
+h3 {
+  color: #E1F4CB;
+}
+
+ul, li, p {
+  color: whitesmoke;
+}
+
+/* Grid Container */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem; 
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Grid Item */
+.grid-item {
+  border: 1px solid whitesmoke;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: #3F4739; /* Match background color for consistency */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Ensure all images are the same size */
+.grid-item img {
+  width: 100%;
+  height: 200px; /* Fixed height for all images */
+  object-fit: contain; /* Ensures images cover the area without distorting */
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.grid-item h4 {
+  color: #E1F4CB;
+  margin: 0.5rem 0;
+}
+
+.grid-item p {
+  color: whitesmoke;
+  font-size: 0.9rem;
+}
+
+.interest-section {
+  margin-bottom: 4rem;
+}
+
+.section-container {
   margin: 2rem auto;
   color: #E1F4CB;
   width: 100%;
   max-width: 800px;
-  text-align: left;
 }
 
-.about-container p {
+.section-container p {
   margin: 0;
   padding: 0;
   font-size: 1.2rem;
-  line-height: 1.5;
+  line-height: 1.8;
 }
 
 #about-me {
@@ -110,22 +171,6 @@ a {
   font-weight: bold;
 }
 
-p {
-  font-size: medium;
-}
-
-h2 {
-  color: #BACBA9;
-}
-
-h3 {
-  color: #E1F4CB;
-}
-
-ul, li, p {
-  color: whitesmoke;
-}
-
 /* Projects */
 .projects {
   display: flex;
@@ -165,11 +210,6 @@ ul, li, p {
 }
 
 /* About */
-.about-container {
-  display: flex;
-  flex-direction: column;
-  width: 41rem;
-}
 
 .about-description {
   font-weight: 500;
@@ -213,7 +253,12 @@ ul, li, p {
 
 /* Med Screen */
 @media screen and (max-width: 860px) {
-  .about-container {
+
+  .grid-container {
+    grid-template-columns: repeat(1, minmax(200px, 1fr));
+  }
+
+  .section-container {
     width: 30rem;
   }
 
@@ -272,7 +317,7 @@ ul, li, p {
     height: auto;
   }
 
-  .about-container {
+  .section-container {
     width: 100%;
   }
 
