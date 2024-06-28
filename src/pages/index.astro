@@ -10,22 +10,23 @@ const projects = projectData;
     <div class="circle" id="circle"></div>
     <div class="dot" id="dot"></div>
   </div>
-  <div id="about"></div>
-  <div class="about-container">
-    <p id="about-me">
+
+  <section class="about-container">
+    <p>
      Hi, I’m Alex! I have 6 months of experience as a Software Engineer intern, and I created this website to showcase my interests, projects, and socials.   
      </p>
-    <p id="about-me">You can reach me here: <a href="mailto:alexocegueda59@gmail.com" rel="noopener noreferrer" target="_blank">alexocegueda59@gmail.com</a> or @deadmonosociety on Discord</p>
-    <p id="about-me">Socials: <a href="https://github.com/AlexOcegueda" rel="noopener noreferrer" target="_blank">[Github]</a> <a href="https://www.linkedin.com/in/alexocegueda/" rel="noopener noreferrer" target="_blank">[LinkedIn]</a></p>
-  </div>
+    <p>You can reach me here: <a href="mailto:alexocegueda59@gmail.com" rel="noopener noreferrer" target="_blank">alexocegueda59@gmail.com</a> or @deadmonosociety on Discord</p>
+    <p>Socials: <a href="https://github.com/AlexOcegueda" rel="noopener noreferrer" target="_blank">[Github]</a> <a href="https://www.linkedin.com/in/alexocegueda/" rel="noopener noreferrer" target="_blank">[LinkedIn]</a></p>
+  </section>
+
   <div class="heading-container" id="projects">
-    <h1 id="project-header">Projects</h1>
+    <h2>Projects</h2>
   </div>
-  <main class="projects" id="projects">
+  <main class="projects">
     {projects.map((project, index) => (
       <div class="project-container fade-in-out" data-project-id={project.id}>
         <div class="text-container">
-          <h2>{project.displayName}</h2>
+          <h3>{project.displayName}</h3>
           <span id="tool">{project.tools.join(', ')}</span>
           <p class="project-description">{project.description}</p>
           <a class="github-link" href={project.link}>See on Github →</a>

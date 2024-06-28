@@ -18,6 +18,18 @@ body {
   margin: 0;
 }
 
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 1rem 4rem 1rem 4rem;
+  z-index: 1000; /* Ensure the navbar is on top of other elements */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3F4739;
+}
+
 main {
   margin-top: 4rem; /* Adjust based on the height of the navbar */
   display: flex;
@@ -57,13 +69,11 @@ a {
   display: flex;
 }
 
-#project-header {
-  justify-content: flex-start;
-}
 
 .nav-links {
   display: flex;
   align-items: center;
+  list-style: none;
 }
 
 .nav-link {
@@ -72,7 +82,7 @@ a {
   list-style: none;
   cursor: pointer;
   text-decoration: none;
-  color: #717568;
+  color: inherit;
   position: relative;
 }
 
@@ -97,7 +107,6 @@ a {
 
 .logo {
   color: #F1BF98;
-  font-size: 20px;
   font-weight: bold;
 }
 
@@ -105,11 +114,11 @@ p {
   font-size: medium;
 }
 
-h1 {
+h2 {
   color: #BACBA9;
 }
 
-h2 {
+h3 {
   color: #E1F4CB;
 }
 
@@ -193,19 +202,6 @@ ul, li, p {
   max-height: 200px; /* Adjust as needed */
   object-fit: cover;
   border-radius: 1rem;
-}
-
-/* Navbar */
-nav {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: #3F4739; /* Same as body background color or any desired color */
-  padding: 1rem;
-  z-index: 1000; /* Ensure the navbar is on top of other elements */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 @media screen and (max-width: 1170px) {
