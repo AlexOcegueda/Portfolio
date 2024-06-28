@@ -19,7 +19,7 @@ body {
 }
 
 nav {
-  position: fixed;
+  position: fixed; /* Ensure the navbar stays fixed at the top */
   top: 0;
   width: 100%;
   padding: 1rem 4rem 1rem 4rem;
@@ -31,7 +31,7 @@ nav {
 }
 
 main {
-  margin-top: 2rem;
+  margin-top: 4rem; /* Adjusted to account for the fixed navbar */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -128,7 +128,6 @@ ul, li, p {
 .heading-container {
   display: flex;
 }
-
 
 .nav-links {
   display: flex;
@@ -243,7 +242,6 @@ ul, li, p {
   border-radius: 1rem;
 }
 
-
 .hamburger {
   display: none;
   flex-direction: column;
@@ -299,14 +297,6 @@ ul, li, p {
   display: flex;
 }
 
-@media screen and (max-width: 1170px) {
-  nav {
-    position: static !important; 
-    width: 80% !important; 
-  }
-}
-
-/* Med Screen */
 @media screen and (max-width: 860px) {
   .nav-links {
     display: none;
@@ -315,7 +305,7 @@ ul, li, p {
   .hamburger {
     display: flex;
   }
-  
+
   .grid-container {
     grid-template-columns: repeat(1, minmax(200px, 1fr));
   }
@@ -346,8 +336,7 @@ ul, li, p {
   }
 
   nav {
-    position: static !important; 
-    width: 75% !important; 
+    width: 100%;
   }
 
   .logo {
@@ -357,14 +346,12 @@ ul, li, p {
 
 @media screen and (max-width: 680px) {
   nav {
-    position: static !important; 
-    width: 85% !important; 
+    width: 100%;
   }
 }
 
 /* Small Screen */
 @media screen and (max-width: 576px) {
-
   .logo {
     font-size: 1.2rem !important;
     margin: 0 1rem !important;
@@ -389,8 +376,7 @@ ul, li, p {
   }
 
   nav {
-    position: static !important; 
-    width: 100% !important; 
+    width: 100%;
   }
 }
 
