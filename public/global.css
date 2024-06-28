@@ -298,6 +298,10 @@ ul, li, p {
 }
 
 @media screen and (max-width: 860px) {
+  .circle-container, .dot {
+    display: none;
+  }
+
   .nav-links {
     display: none;
   }
@@ -354,7 +358,6 @@ ul, li, p {
 @media screen and (max-width: 576px) {
   .logo {
     font-size: 1.2rem !important;
-    margin: 0 1rem !important;
   }
 
   #project-header {
