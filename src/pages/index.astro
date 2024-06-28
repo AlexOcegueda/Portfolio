@@ -17,9 +17,9 @@ const books = bookData;
 
   <section class="section-container">
     <p>
-     Hi, I’m Alex! I have 6 months of experience as a Software Engineer intern, and I created this website to showcase my interests, projects, and socials.   
+     Hi, I’m Alex! I have 6 months of experience as a Software Engineer intern, and I created this website to showcase my socials, interests, and projects.   
      </p>
-    <p>You can reach me here: <a href="mailto:alexocegueda59@gmail.com" rel="noopener noreferrer" target="_blank">alexocegueda59@gmail.com</a> or @deadmonosociety on Discord</p>
+    <p>You can reach me here: <a href="mailto:alexocegueda59@gmail.com" rel="noopener noreferrer" target="_blank">[alexocegueda59@gmail.com]</a> or @deadmonosociety on Discord</p>
     <p>Socials: <a href="https://github.com/AlexOcegueda" rel="noopener noreferrer" target="_blank">[Github]</a> <a href="https://www.linkedin.com/in/alexocegueda/" rel="noopener noreferrer" target="_blank">[LinkedIn]</a></p>
   </section>
 
@@ -31,7 +31,7 @@ const books = bookData;
       <h3>Languages</h3>
       <p>I like learning new languages for fun. I have a 720-day streak on Duolingo - most being spent on Spanish but
       I recently decided to learn German and Italian. I also practice American Sign Language (ASL) from a website called
-      <a href="https://www.lifeprint.com/asl101/lessons/lessons.htm">Lifeprint</a>. I finished ASL 1 on there and plan to do up to course 4.</p>
+      <a href="https://www.lifeprint.com/asl101/lessons/lessons.htm">[Lifeprint]</a>. I finished ASL 1 on there and plan to do up to course 4.</p>
     </div>
     <div class="interest-section">
       <h3>Books</h3>
@@ -41,7 +41,7 @@ const books = bookData;
         {books.map((book, index) => (
           <div class="grid-item" key={index} style="border: 1px solid whitesmoke; padding: 1rem; margin: 0.5rem;">
             <img src={book.img} alt={book.name} style="max-width: 100%; border-radius: 0.5rem;" />
-            <h4>{book.name}</h4>
+            <h4 style="color: #F1BF98">[<a href={book.link} target="_blank" rel="noopener noreferrer">{book.name}</a>]</h4>
             <p>{book.description}</p>
           </div>
         ))}
@@ -55,7 +55,7 @@ const books = bookData;
         {movies.map((movie, index) => (
           <div class="grid-item" key={index} style="border: 1px solid whitesmoke; padding: 1rem; margin: 0.5rem;">
             <img src={movie.img} alt={movie.name} style="max-width: 100%; border-radius: 0.5rem;" />
-            <h4>{movie.name}</h4>
+            <h4 style="color: #F1BF98">[<a href={movie.imdb} target="_blank" rel="noopener noreferrer">{movie.name}</a>]</h4>
             <p>{movie.description}</p>
           </div>
         ))}
@@ -70,7 +70,12 @@ const books = bookData;
     {projects.map((project, index) => (
       <div class="project-container fade-in-out" data-project-id={project.id}>
         <div class="text-container">
-          <h3>{project.displayName}</h3>
+          <h3>
+            {project.displayName}
+            {project.website && (
+              <a href={project.website} target="_blank" rel="noopener noreferrer"> [Website]</a>
+            )}
+          </h3>
           <span id="tool">{project.tools.join(', ')}</span>
           <p class="project-description">{project.description}</p>
           <a class="github-link" href={project.link}>See on Github →</a>
@@ -78,6 +83,6 @@ const books = bookData;
         <img src={project.image} alt="Project Image" style="border-radius: 1rem; object-fit: cover; max-width: 100%; height: auto;" />
       </div>
     ))}
-  </main>
+  </main>[]
   <script type="module" src="/scripts/animations.js"></script>
 </MainLayout>

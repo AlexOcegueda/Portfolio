@@ -30,3 +30,21 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll('.fade-in-out').forEach(project => {
   observer.observe(project);
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const hamburger = document.getElementById('hamburger');
+  const mobileNav = document.getElementById('mobile-nav');
+  const closeBtn = document.getElementById('close-btn');
+  const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+  const toggleMobileNav = () => {
+    mobileNav.classList.toggle('open');
+  };
+
+  hamburger.addEventListener('click', toggleMobileNav);
+  closeBtn.addEventListener('click', toggleMobileNav);
+
+  mobileNavLinks.forEach(link => {
+    link.addEventListener('click', toggleMobileNav);
+  });
+});

@@ -2,16 +2,19 @@
   {
     "name": "Grand Budapest Hotel",
     "img": "../../images/grandbudapest.jpg",
-    "description": "A whimsical adventure by Wes Anderson, following the misadventures of a concierge and his protégé at a luxurious European hotel."
+    "description": "A whimsical adventure by Wes Anderson, following the misadventures of a concierge and his protégé at a luxurious European hotel.",
+    "imdb": "https://www.imdb.com/title/tt2278388/"
   },
   {
     "name": "Bullet Train",
     "img": "../../images/bullettrain.jpg",
-    "description": "A high-speed action thriller about five assassins on a bullet train whose missions intertwine in unexpected ways."
+    "description": "A high-speed action thriller about five assassins on a bullet train whose missions intertwine in unexpected ways.",
+    "imdb": "https://www.imdb.com/title/tt12593682/?ref_=nv_sr_srsg_0_tt_7_nm_1_q_bullet%2520t"
   },
   {
     "name": "Get Out",
     "img": "../../images/getout.jpg",
-    "description": "A chilling horror film by Jordan Peele, where a young African-American man uncovers disturbing secrets when visiting his white girlfriend's family estate."
+    "description": "A chilling horror film by Jordan Peele, where a young African-American man uncovers disturbing secrets when visiting his white girlfriend's family estate.",
+    "imdb": "https://www.imdb.com/title/tt5052448/"
   }
 ]
