@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Grand Budapest Hotel",
+    "img": "../../images/grandbudapest.jpg",
+    "description": "A whimsical adventure by Wes Anderson, following the misadventures of a concierge and his protégé at a luxurious European hotel."
+  },
+  {
+    "name": "Bullet Train",
+    "img": "../../images/bullettrain.jpg",
+    "description": "A high-speed action thriller about five assassins on a bullet train whose missions intertwine in unexpected ways."
+  },
+  {
+    "name": "Get Out",
+    "img": "../../images/getout.jpg",
+    "description": "A chilling horror film by Jordan Peele, where a young African-American man uncovers disturbing secrets when visiting his white girlfriend's family estate."
+  }
+]
