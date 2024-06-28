@@ -4,7 +4,8 @@
     "tools": ["Flask, SQLite, Python"],
     "link": "https://github.com/AlexOcegueda/PhobiaDB",
     "description": "This is a database full of phobias which I scraped from the Cleveland clinic website. It allows you to choose from a dropdown to learn more about whichever phobia you choose.",
-    "image": "/images/phobia.webp"
+    "image": "/images/phobia.webp",
+    "website": "http://alexocegueda.pythonanywhere.com/"
   },
   {
     "displayName": "Climate Change",

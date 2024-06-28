@@ -70,7 +70,12 @@ const books = bookData;
     {projects.map((project, index) => (
       <div class="project-container fade-in-out" data-project-id={project.id}>
         <div class="text-container">
-          <h3>{project.displayName}</h3>
+          <h3>
+            {project.displayName}
+            {project.website && (
+              <a href={project.website} target="_blank" rel="noopener noreferrer"> [Website]</a>
+            )}
+          </h3>
           <span id="tool">{project.tools.join(', ')}</span>
           <p class="project-description">{project.description}</p>
           <a class="github-link" href={project.link}>See on Github →</a>
