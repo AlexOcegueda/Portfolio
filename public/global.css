@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  background-color: #3F4739; /* violet */
+  background-color: #3F4739; 
   font-family: 'Playfair Display', serif;
   display: flex;
   flex-direction: column;
@@ -23,7 +23,7 @@ nav {
   top: 0;
   width: 100%;
   padding: 1rem 4rem 1rem 4rem;
-  z-index: 1000; /* Ensure the navbar is on top of other elements */
+  z-index: 1000; 
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -77,18 +77,17 @@ ul, li, p {
   border: 1px solid whitesmoke;
   padding: 1rem;
   border-radius: 0.5rem;
-  background-color: #3F4739; /* Match background color for consistency */
+  background-color: #3F4739; 
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
 
-/* Ensure all images are the same size */
 .grid-item img {
   width: 100%;
-  height: 200px; /* Fixed height for all images */
-  object-fit: contain; /* Ensures images cover the area without distorting */
+  height: 200px; 
+  object-fit: contain; 
   border-radius: 0.5rem;
   margin-bottom: 0.5rem;
 }
@@ -238,22 +237,85 @@ ul, li, p {
 .project-container img {
   width: 100%;
   height: auto;
-  max-width: 500px; /* Adjust as needed */
-  max-height: 200px; /* Adjust as needed */
+  max-width: 500px; 
+  max-height: 200px; 
   object-fit: cover;
   border-radius: 1rem;
 }
 
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: #F1BF98;
+  margin: 3px 0;
+}
+
+.mobile-nav {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #3F4739;
+  z-index: 999;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.mobile-nav ul {
+  list-style: none;
+  text-align: center;
+}
+
+.mobile-nav li {
+  margin: 1rem 0;
+}
+
+.mobile-nav a {
+  color: #F1BF98;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.mobile-nav .close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  font-size: 2rem;
+  color: #F1BF98;
+  cursor: pointer;
+}
+
+.mobile-nav.open {
+  display: flex;
+}
+
 @media screen and (max-width: 1170px) {
   nav {
-    position: static !important; /* Change navbar to static position on medium screens */
-    width: 80% !important; /* Ensure width is 100% */
+    position: static !important; 
+    width: 80% !important; 
   }
 }
 
 /* Med Screen */
 @media screen and (max-width: 860px) {
+  .nav-links {
+    display: none;
+  }
 
+  .hamburger {
+    display: flex;
+  }
+  
   .grid-container {
     grid-template-columns: repeat(1, minmax(200px, 1fr));
   }
@@ -284,24 +346,25 @@ ul, li, p {
   }
 
   nav {
-    position: static !important; /* Change navbar to static position on medium screens */
-    width: 75% !important; /* Ensure width is 100% */
+    position: static !important; 
+    width: 75% !important; 
   }
 
   .logo {
-    font-size: 1.5rem !important; /* Adjust font size for logo */
+    font-size: 1.5rem !important; 
   }
 }
 
 @media screen and (max-width: 680px) {
   nav {
-    position: static !important; /* Change navbar to static position on medium screens */
-    width: 85% !important; /* Ensure width is 100% */
+    position: static !important; 
+    width: 85% !important; 
   }
 }
 
 /* Small Screen */
 @media screen and (max-width: 576px) {
+
   .logo {
     font-size: 1.2rem !important;
     margin: 0 1rem !important;
@@ -326,8 +389,8 @@ ul, li, p {
   }
 
   nav {
-    position: static !important; /* Change navbar to static position on small screens */
-    width: 100% !important; /* Ensure width is 100% */
+    position: static !important; 
+    width: 100% !important; 
   }
 }
 
@@ -371,7 +434,7 @@ ul, li, p {
   width: 100%;
   height: 100%;
   pointer-events: none;
-  z-index: 1000; /* Ensure the circle and dot are on top of other elements */
+  z-index: 1000; 
 }
 
 .circle {
