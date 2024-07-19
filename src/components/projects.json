@@ -3,7 +3,7 @@
     "displayName": "Climate Change",
     "tools": [" Nextjs, TypeScript, Python, SQLite, tKinter, D3"],
     "link": "https://github.com/AlexOcegueda/ClimateChange",
-    "description": "This is a website to promote climate change education by showing visualizations common trends to global warming, sea levels, and CO2 concentrations.",
+    "description": "This is a website to promote climate change education by showing visualizations of common trends dealing with global warming, sea levels, and CO2 concentrations.",
     "image": "/images/climatechange.png",
     "website": "https://climate-change-delta.vercel.app/"
   },
