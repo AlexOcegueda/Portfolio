@@ -21,7 +21,7 @@
   background: url('/images/background.webp') no-repeat center center;
   background-size: cover;
   z-index: -1;
-  opacity: 2; 
+  opacity: 1; 
 }
 
 .overlay {
@@ -408,13 +408,8 @@ ul, li, p {
     padding: 1rem; 
   }
 
-  .section-container h1,
-  .section-container p {
-    margin: 0 1rem; 
-  }
-
-  .heading-container {
-    margin-top: 10rem;
+  #interests {
+    margin-top: 8rem;
   }
 }
 
