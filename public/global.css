@@ -11,6 +11,7 @@
   background: rgba(63, 71, 57, 0.8); 
 }
 
+
 .background-gif {
   position: absolute;
   top: 0;
@@ -20,7 +21,7 @@
   background: url('/images/background.webp') no-repeat center center;
   background-size: cover;
   z-index: -1;
-  opacity: 6; 
+  opacity: 1; 
 }
 
 .overlay {
@@ -29,7 +30,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(63, 71, 57, 0.8); 
+  background-color: rgba(63, 71, 57, 0.8);
   z-index: -1;
 }
 
@@ -70,7 +71,6 @@ nav {
 }
 
 main {
-  margin-top: 4rem; 
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -99,6 +99,11 @@ h3 {
 
 ul, li, p {
   color: whitesmoke;
+}
+
+.ipa {
+  color: rgb(255, 200, 100);
+  cursor: pointer;
 }
 
 /* Grid Container */
@@ -142,6 +147,16 @@ ul, li, p {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+#interests {
+  display: flex;
+  justify-content: center;
+  width: 100%; /* Ensure it takes up the full width of the container */
+}
+
+#interests h2 {
+  text-align: center; /* Optional, ensures the text itself is centered */
 }
 
 .interest-section {
@@ -342,16 +357,12 @@ ul, li, p {
 }
 
 @media screen and (max-width: 860px) {
+  main {
+    padding: 0;
+  }
+
   .circle-container, .dot {
     display: none;
-  }
-
-  .nav-links {
-    display: none;
-  }
-
-  .hamburger {
-    display: flex;
   }
 
   .grid-container {
@@ -388,14 +399,67 @@ ul, li, p {
   }
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 790px) {
   nav {
+    top: auto; 
+    bottom: 0; 
     width: 100%;
   }
+
+  main {
+    margin: 0;
+  }
+
+  #intro {
+    margin: 0;
+  }
+
+  .intro-description {
+    margin-top: 12rem;
+  }
+
+  .grid-item img {
+    width: 120px;
+    height: auto;
+    margin-right: 1rem;
+  }
+
+  .section-container {
+    padding: 1rem; 
+  }
+
+  #interests {
+    margin-top: 8rem;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+}
+
+@media screen and (max-width: 750px) {
+
+  #intro {
+    height: clamp(250px, 30vh, 100vh);
+  }
+  
+  #interests-container {
+    margin-top: 20rem;
+  }
+
 }
 
 /* Small Screen */
 @media screen and (max-width: 576px) {
+  #interests-container {
+    margin-top: 28rem;
+  }
+
   .logo {
     font-size: 1.2rem !important;
   }
@@ -418,9 +482,15 @@ ul, li, p {
     width: 80%;
   }
 
+  .grid-item {
+    border: none;
+    padding: 0;
+  }
+
   nav {
     width: 100%;
   }
+
 }
 
 /* Animation */
