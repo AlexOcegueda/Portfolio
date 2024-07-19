@@ -11,6 +11,7 @@
   background: rgba(63, 71, 57, 0.8); 
 }
 
+
 .background-gif {
   position: absolute;
   top: 0;
@@ -20,7 +21,7 @@
   background: url('/images/background.webp') no-repeat center center;
   background-size: cover;
   z-index: -1;
-  opacity: 6; 
+  opacity: 2; 
 }
 
 .overlay {
@@ -29,7 +30,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(63, 71, 57, 0.8); 
+  background-color: rgba(63, 71, 57, 0.8);
   z-index: -1;
 }
 
@@ -342,6 +343,10 @@ ul, li, p {
 }
 
 @media screen and (max-width: 860px) {
+  main {
+    padding: 0;
+  }
+
   .circle-container, .dot {
     display: none;
   }
@@ -388,10 +393,38 @@ ul, li, p {
   }
 }
 
-@media screen and (max-width: 680px) {
-  nav {
+@media screen and (max-width: 790px) {
+   nav {
     width: 100%;
   }
+
+  .grid-item img {
+    width: 120px;
+    height: auto;
+    margin-right: 1rem;
+  }
+
+  .section-container {
+    padding: 1rem; 
+  }
+
+  .section-container h1,
+  .section-container p {
+    margin: 0 1rem; 
+  }
+
+  .heading-container {
+    margin-top: 10rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+
+  #intro {
+    height: clamp(250px, 30vh, 100vh);
+  }
+  
+
 }
 
 /* Small Screen */
@@ -418,9 +451,15 @@ ul, li, p {
     width: 80%;
   }
 
+  .grid-item {
+    border: none;
+    padding: 0;
+  }
+
   nav {
     width: 100%;
   }
+
 }
 
 /* Animation */

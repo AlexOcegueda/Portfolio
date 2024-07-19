@@ -44,7 +44,7 @@ const books = bookData;
       Anyway, Here are three of my favorite books:</p>
       <div class="grid-container">
         {books.map((book, index) => (
-          <div class="grid-item" key={index} style="border: 1px solid whitesmoke; padding: 1rem; margin: 0.5rem;">
+          <div class="grid-item" key={index} >
             <img src={book.img} alt={book.name} style="max-width: 100%; border-radius: 0.5rem;" />
             <div class="title-author">
               <h4 style="color: #F1BF98">[<a href={book.link} target="_blank" rel="noopener noreferrer">{book.name}</a>]</h4>
@@ -60,7 +60,7 @@ const books = bookData;
       Here are three of my all-time favorite movies:</p>
       <div class="grid-container">
         {movies.map((movie, index) => (
-          <div class="grid-item" key={index} style="border: 1px solid whitesmoke; padding: 1rem; margin: 0.5rem;">
+          <div class="grid-item" key={index}>
             <img src={movie.img} alt={movie.name} style="max-width: 100%; border-radius: 0.5rem;" />
             <div class="title-author">
               <h4 style="color: #F1BF98">[<a href={movie.imdb} target="_blank" rel="noopener noreferrer">{movie.name}</a>]</h4>
