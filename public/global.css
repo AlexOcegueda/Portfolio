@@ -4,6 +4,45 @@
   padding: 0;
 }
 
+.section-container {
+  position: relative;
+  z-index: 1;
+  padding: 4rem;
+  background: rgba(63, 71, 57, 0.8); 
+}
+
+.background-gif {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('/images/background.webp') no-repeat center center;
+  background-size: cover;
+  z-index: -1;
+  opacity: 6; 
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(63, 71, 57, 0.8); 
+  z-index: -1;
+}
+
+#intro {
+  margin-bottom: 10rem;
+}
+
+h1 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: rgb(224, 232, 255);
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -19,7 +58,7 @@ body {
 }
 
 nav {
-  position: fixed; /* Ensure the navbar stays fixed at the top */
+  position: fixed; 
   top: 0;
   width: 100%;
   padding: 1rem 4rem 1rem 4rem;
@@ -31,7 +70,7 @@ nav {
 }
 
 main {
-  margin-top: 4rem; /* Adjusted to account for the fixed navbar */
+  margin-top: 4rem; 
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -64,9 +103,9 @@ ul, li, p {
 
 /* Grid Container */
 .grid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1rem; 
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
@@ -74,32 +113,35 @@ ul, li, p {
 
 /* Grid Item */
 .grid-item {
-  border: 1px solid whitesmoke;
-  padding: 1rem;
-  border-radius: 0.5rem;
-  background-color: #3F4739; 
   display: flex;
-  flex-direction: column;
   align-items: center;
-  text-align: center;
+  padding: 1rem;
+  background-color: #3F4739;
+  border: 1px solid whitesmoke;
 }
 
 .grid-item img {
-  width: 100%;
-  height: 200px; 
-  object-fit: contain; 
-  border-radius: 0.5rem;
-  margin-bottom: 0.5rem;
+  width: 150px;
+  height: auto;
+  margin-right: 1rem;
 }
 
 .grid-item h4 {
-  color: #E1F4CB;
-  margin: 0.5rem 0;
+  color: #F1BF98;
+  margin: 0;
+  font-size: 1.2rem;
 }
 
 .grid-item p {
   color: whitesmoke;
   font-size: 0.9rem;
+  justify-content: space-between;
+}
+
+.title-author {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .interest-section {
@@ -165,8 +207,10 @@ ul, li, p {
 }
 
 .logo {
-  color: #F1BF98;
-  font-weight: bold;
+  height: 50px; 
+  width: auto; 
+  padding: 0; 
+  margin: 0; 
 }
 
 /* Projects */
@@ -312,10 +356,6 @@ ul, li, p {
 
   .grid-container {
     grid-template-columns: repeat(1, minmax(200px, 1fr));
-  }
-
-  .section-container {
-    width: 30rem;
   }
 
   .about-description {

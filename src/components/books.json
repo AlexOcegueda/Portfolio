@@ -3,18 +3,21 @@
 		"name": "What The Buddha Taught",
 		"img": "../../images/buddha.webp",
 		"description": "You don't have to be Buddhist to reap the benefits of its teachings. Use it to become a better whatever you already are.",
-		"link": "https://www.amazon.com/What-Buddha-Taught-Expanded-Dhammapada/dp/0802130313"
+		"link": "https://www.amazon.com/What-Buddha-Taught-Expanded-Dhammapada/dp/0802130313",
+		"author": "Walpola Rahula Thero"
 	},
 	{
 		"name": "Harry Potter and The Methods of Rationality",
 		"img": "../../images/hpmor.jpg",
 		"description": "Fan fiction where in this version, Harry's aunt Petunia marries a scientist, and Harry grows up with a deep love for logic, reason, and the scientific method.",
-		"link": "https://hpmor.com/"
+		"link": "https://hpmor.com/",
+		"author": "Eliezer Yudkowsky"
 	},
 	{
-		"name": "The Grief Recovery Handbook",
-		"img": "../../images/grhb.jpg",
+		"name": "Atomic Habits",
+		"img": "../../images/atomic.jpg",
 		"description": "'We recieve more education about simple first aid than we do about death, divorce, and or other emotional losses.'",
-		"link": "https://www.amazon.com/Grief-Recovery-Handbook-Anniversary-Expanded/dp/0061686077"
+		"link": "https://www.amazon.com/Atomic-Habits-Proven-Build-Break/dp/0735211299",
+		"author": "James Clear"
 	}
 ]
