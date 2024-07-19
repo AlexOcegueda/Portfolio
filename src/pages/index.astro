@@ -18,19 +18,21 @@ const books = bookData;
   <section id="intro" class="section-container">
     <div class="background-gif"></div>
     <div class="overlay"></div>
-    <h1 id="name-tag" >Alex Ocegueda Castro</h1>
-    <p>
-     Hello! I’m Alex Ocegueda (/oh-seh-geh-dah/), a dedicated software engineer with six months of hands-on experience as an intern. 
-     This website is my personal space to share my socials, interests, and the projects I've been passionate about.<br /> <br />
-     </p>
-    <p>Reach out: <a href="mailto:alexocegueda59@gmail.com" rel="noopener noreferrer" target="_blank">[alexocegueda59@gmail.com]</a></p>
-    <p>Socials: <a href="https://github.com/AlexOcegueda" rel="noopener noreferrer" target="_blank">[Github]</a> <a href="https://www.linkedin.com/in/alexocegueda/" rel="noopener noreferrer" target="_blank">[LinkedIn]</a></p>
+    <div class="intro-description">
+      <h1 id="name-tag" >Alex Ocegueda Castro</h1>
+      <p>
+       Hello! I’m Alex Ocegueda <span class="ipa">/oh-seh-geh-dah/</span>, a dedicated software engineer with six months of hands-on experience as an intern. 
+       This website is my personal space to share my socials, interests, and the projects I've been passionate about.<br /> <br />
+       </p>
+      <p>Reach out: <a href="mailto:alexocegueda59@gmail.com" rel="noopener noreferrer" target="_blank">[alexocegueda59@gmail.com]</a></p>
+      <p>Socials: <a href="https://github.com/AlexOcegueda" rel="noopener noreferrer" target="_blank">[Github]</a> <a href="https://www.linkedin.com/in/alexocegueda/" rel="noopener noreferrer" target="_blank">[LinkedIn]</a></p>
+    </div>
   </section>
 
-  <div class="heading-container" id="interests">
-    <h2>Interests</h2>
-  </div>
-  <section class="section-container">
+  <section id="interests-container" class="section-container">
+    <div class="heading-container" id="interests">
+      <h2>Interests</h2>
+    </div>
     <div class="interest-section">
       <h3>Languages</h3>
       <p>I like learning new languages for fun. I have a 720-day streak on Duolingo - most being spent on Spanish but
@@ -93,5 +95,18 @@ const books = bookData;
       </div>
     ))}
   </main>
+  <audio id="audio-clip" src="/audio/ocegueda.mp3" style="display: none;"></audio>
+
+   <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const ipaSpan = document.querySelector('.ipa');
+      const audioClip = document.getElementById('audio-clip');
+
+      ipaSpan.addEventListener('click', function() {
+        audioClip.play();
+      });
+    });
+  </script>
+
   <script type="module" src="/scripts/animations.js"></script>
 </MainLayout>
