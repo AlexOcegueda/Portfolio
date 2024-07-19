@@ -15,9 +15,13 @@ const books = bookData;
     <div class="dot" id="dot"></div>
   </div>
 
-  <section class="section-container">
+  <section id="intro" class="section-container">
+    <div class="background-gif"></div>
+    <div class="overlay"></div>
+    <h1 id="name-tag" >ALEX OCEGUEDA CASTRO</h1>
     <p>
      Hi, I’m Alex! I have 6 months of experience as a Software Engineer intern, and I created this website to showcase my socials, interests, and projects.   
+     <br /> <br />
      </p>
     <p>You can reach me here: <a href="mailto:alexocegueda59@gmail.com" rel="noopener noreferrer" target="_blank">[alexocegueda59@gmail.com]</a> or @deadmonosociety on Discord</p>
     <p>Socials: <a href="https://github.com/AlexOcegueda" rel="noopener noreferrer" target="_blank">[Github]</a> <a href="https://www.linkedin.com/in/alexocegueda/" rel="noopener noreferrer" target="_blank">[LinkedIn]</a></p>
@@ -42,8 +46,10 @@ const books = bookData;
         {books.map((book, index) => (
           <div class="grid-item" key={index} style="border: 1px solid whitesmoke; padding: 1rem; margin: 0.5rem;">
             <img src={book.img} alt={book.name} style="max-width: 100%; border-radius: 0.5rem;" />
-            <h4 style="color: #F1BF98">[<a href={book.link} target="_blank" rel="noopener noreferrer">{book.name}</a>]</h4>
-            <p>{book.description}</p>
+            <div class="title-author">
+              <h4 style="color: #F1BF98">[<a href={book.link} target="_blank" rel="noopener noreferrer">{book.name}</a>]</h4>
+              <p>By: {book.author}</p>
+            </div>
           </div>
         ))}
       </div>
@@ -56,8 +62,10 @@ const books = bookData;
         {movies.map((movie, index) => (
           <div class="grid-item" key={index} style="border: 1px solid whitesmoke; padding: 1rem; margin: 0.5rem;">
             <img src={movie.img} alt={movie.name} style="max-width: 100%; border-radius: 0.5rem;" />
-            <h4 style="color: #F1BF98">[<a href={movie.imdb} target="_blank" rel="noopener noreferrer">{movie.name}</a>]</h4>
-            <p>{movie.description}</p>
+            <div class="title-author">
+              <h4 style="color: #F1BF98">[<a href={movie.imdb} target="_blank" rel="noopener noreferrer">{movie.name}</a>]</h4>
+              <p>Directed by: {movie.author}</p>
+            </div>
           </div>
         ))}
       </div>
