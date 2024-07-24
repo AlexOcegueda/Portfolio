@@ -234,6 +234,7 @@ ul, li, p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 5rem;
 }
 
 .project-container {
