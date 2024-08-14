@@ -1,10 +1,10 @@
 [
 	{
-		"name": "What The Buddha Taught",
-		"img": "../../images/buddha.webp",
+		"name": "The Alchemist",
+		"img": "../../images/alchemist.jpg",
 		"description": "You don't have to be Buddhist to reap the benefits of its teachings. Use it to become a better whatever you already are.",
 		"link": "https://www.amazon.com/What-Buddha-Taught-Expanded-Dhammapada/dp/0802130313",
-		"author": "Walpola Rahula Thero"
+		"author": "Paulo Coelho"
 	},
 	{
 		"name": "Harry Potter and The Methods of Rationality",
