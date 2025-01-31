@@ -7,11 +7,11 @@
 		"author": "Paulo Coelho"
 	},
 	{
-		"name": "Harry Potter and The Methods of Rationality",
-		"img": "../../images/hpmor.jpg",
-		"description": "Fan fiction where in this version, Harry's aunt Petunia marries a scientist, and Harry grows up with a deep love for logic, reason, and the scientific method.",
-		"link": "https://hpmor.com/",
-		"author": "Eliezer Yudkowsky"
+		"name": "The Hitchhiker's Guide to the Galaxy",
+		"img": "../../images/hitchhiker.png",
+		"description": "",
+		"link": "https://www.amazon.com/Hitchhikers-Guide-Galaxy-Douglas-Adams/dp/0345391802",
+		"author": "Douglas Adams"
 	},
 	{
 		"name": "Atomic Habits",

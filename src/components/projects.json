@@ -23,31 +23,10 @@
     "image": "/images/clinic.webp"
   },
   {
-    "displayName": "Dog Match Maker",
-    "tools": ["Gatsby, React, CEO DogAPI"],
-    "link": "https://github.com/AlexOcegueda/NHS_match_maker",
-    "description": "Built prototype filter and match making system for a local animal shelter.",
-    "image": "/images/dog.webp"
-  },
-  {
     "displayName": "CPU Task Simulator",
     "tools": ["Java"],
     "link": "https://github.com/AlexOcegueda/MultiLevelQueues",
     "description": "Uses a 3 layered priority queue algorithm to simulate how a CPU schedules incoming tasks. Utilizes Round Robin and First Come First Serve algorithms.",
     "image": "/images/cpu.webp"
-  },
-  {
-    "displayName": "PokeAPI Pokedex",
-    "tools": ["React, JavaScript"],
-    "link": "https://github.com/AlexOcegueda/pokeapi_pokedex",
-    "description": "Built mobile friendly website to display original 151 pokemon.",
-    "image": "/images/pokemon.webp"
-  },
-  {
-    "displayName": "Python Scripts",
-    "tools": ["Python, Turtle, PyQt5"],
-    "link": "https://github.com/AlexOcegueda/Python_Scripts/",
-    "description": "Collection of Python scripts I've done in college.",
-    "image": "/images/pythonscripts.webp"
   }
 ]
