@@ -21,8 +21,7 @@ const books = bookData;
     <div class="intro-description">
       <h1 id="name-tag" >Alex Ocegueda Castro</h1>
       <p>
-       Hello! I’m Alex Ocegueda <span class="ipa">/oh-seh-geh-dah/</span>, a dedicated software engineer with six months of hands-on experience as an intern. 
-       This website is my personal space to share my socials, interests, and the projects I've been passionate about.<br /> <br />
+       Hello! I’m Alex Ocegueda <span class="ipa">/oh-seh-geh-dah/</span>, —a software engineer with experience in full-stack development.<br /> <br />
        </p>
       <p>Reach out: <a href="mailto:alexocegueda59@gmail.com" rel="noopener noreferrer" target="_blank">[alexocegueda59@gmail.com]</a></p>
       <p>Socials: <a href="https://github.com/AlexOcegueda" rel="noopener noreferrer" target="_blank">[Github]</a> 
@@ -35,45 +34,47 @@ const books = bookData;
     <div class="heading-container" id="interests">
       <h2>Interests</h2>
     </div>
-    <div class="interest-section">
+    <!-- <div class="interest-section">
       <h3>Languages</h3>
       <p>I like learning new languages for fun. I have a 720-day streak on Duolingo - most being spent on Spanish but
       I recently decided to learn German and Italian. I also practice American Sign Language (ASL) from a website called
       <a href="https://www.lifeprint.com/asl101/lessons/lessons.htm">[Lifeprint]</a>. I finished ASL 1 on there and plan to do up to course 4.</p>
-    </div>
+    </div> -->
     <div class="interest-section">
-      <h3>Books</h3>
-      <p>Books have always been a source of inspiration and knowledge for me. 
-      I love diving into different worlds and exploring new ideas through literature. My favorite book series is Harry Potter, I listen to them on audio books whenever I want to kill time. 
-      Anyway, Here are three of my favorite books:</p>
+      <h3>Interests</h3>
+      <p>Beyond coding, I enjoy exploring stories through books and movies. Here are some of my favorites:</p>
+      
       <div class="grid-container">
-        {books.map((book, index) => (
-          <div class="grid-item" key={index} >
-            <img src={book.img} alt={book.name} style="max-width: 100%; border-radius: 0.5rem;" />
-            <div class="title-author">
-              <h4 style="color: #F1BF98">[<a href={book.link} target="_blank" rel="noopener noreferrer">{book.name}</a>]</h4>
-              <p>By: {book.author}</p>
+        <!-- Books Section -->
+        <div class="grid-column">
+          <h3>📖 Favorite Books</h3>
+          {books.map((book, index) => (
+            <div class="grid-item" key={index}>
+              <img src={book.img} alt={book.name} />
+              <div class="title-author">
+                <h4>[<a href={book.link} target="_blank" rel="noopener noreferrer">{book.name}</a>]</h4>
+                <p>By: {book.author}</p>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
+
+        <!-- Movies Section -->
+        <div class="grid-column">
+          <h3>🎬 Favorite Movies</h3>
+          {movies.map((movie, index) => (
+            <div class="grid-item" key={index}>
+              <img src={movie.img} alt={movie.name} />
+              <div class="title-author">
+                <h4>[<a href={movie.imdb} target="_blank" rel="noopener noreferrer">{movie.name}</a>]</h4>
+                <p>Directed by: {movie.author}</p>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
-    <div class="interest-section">
-      <h3>Movies</h3>
-      <p>Movies are another passion of mine. I love how they can transport you to different realities and evoke a wide range of emotions. 
-      Here are three of my all-time favorite movies:</p>
-      <div class="grid-container">
-        {movies.map((movie, index) => (
-          <div class="grid-item" key={index}>
-            <img src={movie.img} alt={movie.name} style="max-width: 100%; border-radius: 0.5rem;" />
-            <div class="title-author">
-              <h4 style="color: #F1BF98">[<a href={movie.imdb} target="_blank" rel="noopener noreferrer">{movie.name}</a>]</h4>
-              <p>Directed by: {movie.author}</p>
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
+
   </section>
 
   <div class="heading-container" id="projects">
